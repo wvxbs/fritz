@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+        function clique() {
+            var endereco = document.getElementById('idendereco');
+            $(endereco).fadeIn("medium");
+            document.getElementById('idbotao').style.display = "none";
+            document.getElementById('idheader').style.marginTop = "15px";
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header id="idheader">
+        <h1>Fritz</h1>
+        <form id="idbotao">
+            <input type="button" onclick="clique()" value="Comida Caseira" class=""></input>
+        </form>
+    </header>
+
+    <div class="endereco" id="idendereco">
+        <form>
+            <input type="text" placeholder="Insira seu CEP" onclick="clique()" id="cep">
+            <br>
+            <input type="text" id="rua" placeholder="Rua">
+            <input type="text" id="bairro" placeholder="Bairro">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="uf" placeholder="Estado">
+            <input type="button" id="segue" value="Continuar" style="background: rgb(247, 247, 247); font-size:20px;margin: 10px;">
+
+        </form>
+    </div>
+</body>
+
+</html>
