@@ -1,3 +1,10 @@
+function clique() {
+    var endereco = document.getElementById('idendereco');
+    $(endereco).fadeIn("medium");
+    document.getElementById('idbotao').style.display = "none";
+    document.getElementById('idheader').style.marginTop = "15px";
+}
+
 $(document).ready(function () {
     function limpa_formulário_cep() {
         // Limpa valores do formulário de cep.

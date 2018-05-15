@@ -9,11 +9,13 @@ body{
     
 }
 
+nav{
+    background: rgb(231, 231, 231);
+}
 
 ul{
     display: inline-block;
     text-align: right;
-
 }
 
 li, a{
@@ -21,6 +23,7 @@ li, a{
     text-decoration: none;
     color: inherit;
     padding: 10px;
+    font-size: 20px;
 
 }
 
@@ -86,5 +89,16 @@ input[type=text]{
     height: 280px;
     width: 500px;
  
+}
+
+article{
+    background: rgb(231, 231, 231);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px black;
+    margin: auto;
+    padding: 30px;
+    display: none;
+    width: 600px;
+    height: 100%;
 }
 
