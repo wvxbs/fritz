@@ -1,25 +1,173 @@
-<!DOCTYPE html>
+<!DOCTYPetype html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"   />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fritz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="shortcut icon" href="imagens/fritz.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
+<div id="body">
     <nav>
-        <a href="index.html"><img src="imagens/fritz.png" width="90" height="90" ></a>
+        <a class="icone;" href="index.html"><img class="icone" src="imagens/fritzwhite.png"></a>
         <ul>
-            <li><a>Explorar</a></li>
-            <li><a>Busca</a></li>
-            <li><a>Carrinho</a></li>
+            <li><a><input class="btnrest" type="button" value="Busca"></a></li>
+            <li><a><input class="btnrest" type="button" value="Carrinho"></a></li>
+            <li><a><input class="btnrest" type="button" value="Login"></a></li>
         </ul>
     </nav>
 
-    <article>
-        <h1>a</h1>
-    </article>
+    <div>
+        <div class="filtro">
+            <h2>Filtros</h2>
+            <select>
+                <option></option>
+                <option>Preço</option>
+                <option></option>
+            </select>
+            <select>
+                <legend></legend>
+            </select>   
+        </div>
+</div>
+        <div class="stream1">
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante a</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                    <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+                </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante b</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante c</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante d</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante e</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante f</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante g</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante h</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante i</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante j</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante k</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+            <div  id="unitario" class="unitario">
+                <b class="titulouni">Restaurante l</b><br>
+                    <div class="imguni">
+                        <img width="100" height="100" src="imagens/jaco-pretorius-514735-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/shane-rounce-405329-unsplash.jpg">
+                        <img width="100" height="100" src="imagens/monkgogi-samson-487376-unsplash.jpg">
+                    </div>
+                <form>
+                <input  id="saibamais" class="saibamais"type="button" onclick="clica2()" value="Saiba Mais">
+            </form>
+            </div>
+        </div>
+    </div>
 </body>

@@ -1,8 +1,16 @@
-function clique() {
+function clica(){
     var endereco = document.getElementById('idendereco');
     $(endereco).fadeIn("medium");
     document.getElementById('idbotao').style.display = "none";
     document.getElementById('idheader').style.marginTop = "15px";
+
+}   
+
+function clica2(){
+    var saibamais = document.getElementById('saibamais');
+    $(saibamais).fadeIn("medium");
+    document.getElementById('unitario').style.display = "none";
+    
 }
 
 $(document).ready(function () {

@@ -1,36 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Julius+Sans+One');
 
 body{
-    text-align: center;
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
-    color: black;
-    background: white;
+    color: white;
+    background: rgb(75, 75, 75);
+    -moz-user-select: none; 
     
 }
 
 nav{
-    background: rgb(231, 231, 231);
+    font-family: 'Dosis',sans-serif;
+    text-align: none;
+    height: 90px;
+    margin: 0;
+    padding: 20px;
+    padding-top: 10px;
+    color: inherit;
+}
+
+.centro{
+    text-align: center;
+
 }
 
 ul{
+    font-family: 'Dosis',sans-serif;
     display: inline-block;
-    text-align: right;
+    float: right;
+    margin-bottom: auto;
+
 }
 
 li, a{
+    font-family: inherit;
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    padding: 10px;
-    font-size: 20px;
+    font-size: 20px;    
 
 }
 
 h1{
+    color: rgb(255, 255, 255);
     font-family: 'Lobster', cursive;
     font-size: 200px;
     margin: 0;
+    user-select: none;
+    -moz-user-select: none;
 
 }
 
@@ -41,24 +58,48 @@ header{
 
 }
 
-input[type=button] {
+.btninicio {
     font-family: inherit;
     font-size: 30px;
     text-decoration: none;
     padding: 5px;
-    border: 2px;
-    border-style: solid;
+    border: 3px;
     border-radius: 5px;
-    border-color: black;
-    background: rgba(255, 255, 255, 0);
+    color:inherit;
+    border-color: white;
+    background: rgba(255, 0, 0, 0);
     transition-duration: 40ms;
     cursor: inherit;
+    margin:10px;
 
 }
 
-input[type=button]:hover{
+.btninicio:hover{
+    background: white;
+    box-shadow: 0px 2px 3px black;
+    color: black;
+    border: 2px;
+
+}
+
+.btnrest {  
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    border-style: none;
+    border-color: white;
+    color: inherit;
+    transition-duration: 40ms;
+    cursor: inherit;
+    padding: 15px;
+    background: none;
+
+}
+
+.btnrest:hover {
     background: rgb(231, 231, 231);
     box-shadow: 0px 2px 3px black;
+    color: black;
 
 }
 
@@ -71,11 +112,23 @@ input[type=text]{
     border: 2px;
     border-style: solid;
     border-radius: 5px;
-    border-color: black;
+    border-color: white;
     background: rgb(247, 247, 247);
     transition-duration: 40ms;
-    cursor: inherit;
     box-shadow: 0px 0px 2px black ;
+
+}
+
+select {
+    border-color: white;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    
+}
+
+select select{
+    display: none;
 
 }
 
@@ -91,14 +144,85 @@ input[type=text]{
  
 }
 
-article{
-    background: rgb(231, 231, 231);
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px black;
+.filtro{
+    text-decoration: none;
+    width: 80%;
     margin: auto;
-    padding: 30px;
-    display: none;
-    width: 600px;
-    height: 100%;
+    text-align: center;
+
 }
 
+.stream1{
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-right: 30px; 
+    margin-left: 30px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.unitario {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    background: rgb(114, 77, 46);
+    padding: 5px;
+    width: 50%;
+    height: 300px;
+    box-shadow: 0px 2px 4px black;
+    
+}   
+
+.titulouni{
+    font-family: 'Lobster', cursive;
+    font-size: 130%;
+
+}
+
+imguni{
+    display: grid;
+}
+
+.icone{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    padding: 0;
+
+}
+
+.icone:hover{
+    background: white;
+    box-shadow: 0px 2px 3px black;
+    color: black;
+    border: 2px;
+    mix-blend-mode: multiply;
+
+}
+
+.saibamais {
+    font-size: 12px;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    color: inherit;
+    transition-duration: 40ms;
+    cursor: inherit;
+    padding: 2px;
+    background: none;
+    box-shadow: 0px 0px 1px black;
+
+}
+
+.saibamais:hover{
+    background: rgb(231, 231, 231);
+    box-shadow: 0px 2px 3px black;
+    color: black;
+
+}
