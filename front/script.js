@@ -1,18 +1,45 @@
-function clica(){
+
+function Clica(){
     var endereco = document.getElementById('idendereco');
     $(endereco).fadeIn("medium");
     document.getElementById('idbotao').style.display = "none";
     document.getElementById('idheader').style.marginTop = "15px";
 
-}   
+}       
 
-function clica2(){
+function Clica2(){
     var saibamais = document.getElementById('saibamais');
     $(saibamais).fadeIn("medium");
-    document.getElementById('unitario').style.display = "none";
+    document.getElementById('uni').style.display = "none";
     
 }
 
+var x = document.getElementsByClassName("unitario");
+var i=0;
+
+function Densidade() {
+    for(i =0; i <x.length; i++) {
+        x[i].style.width =  "50%";
+        x[i].style.height = "300px";
+
+    }    
+}
+
+function Densidade2() {
+    for(i = 0; i < x.length; i++) { 
+        x[i].style.width = "30%";
+        x[i].style.height = "300px";
+
+    }
+}
+
+function Densidade3(){
+    for(i = 0; i < x.length; i++) {
+        x[i].style.width = "20%";
+        x[i].style.height = "190px";
+    }
+}
+//
 $(document).ready(function () {
     function limpa_formulário_cep() {
         // Limpa valores do formulário de cep.
