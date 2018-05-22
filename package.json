@@ -1,0 +1,20 @@
+{
+  "name": "fritz",
+  "version": "1.0.0",
+  "description": "plataforma para venda de comida",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fritola23@bitbucket.org/wvxbs/fritz.git"
+  },
+  "author": "Fritola and Ferreira",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/wvxbs/fritz#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
