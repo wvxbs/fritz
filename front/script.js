@@ -64,7 +64,7 @@ function VoltaUni() {
         x[i].style.display= "inline-block";
 
     }    
-    document.getElementById('filtro').style.display = "inline-block";
+    document.getElementById('filtro').style.display = "inline";
     
 }
 

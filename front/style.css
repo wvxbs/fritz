@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Julius+Sans+One');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif');
 
 body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
     color: white;
-    background: rgb(51, 51, 51);
+    background: rgb(37, 37, 37);
     -moz-user-select: none; 
     
 }
@@ -17,25 +17,29 @@ body{
 
 }
 
+
 .titulo{
     text-align: center;
-    margin: 2%;
+    margin: 4%;
     width: 30%;
     height: 500px;
     background: rgb(139, 94, 57); 
     z-index: 1;
     box-shadow: 5px 5px 10px black;
-    
+    position: fixed;
+
 }
 
 .titulo:hover {
     -shadow: 5px 5px 30px black;
 }
 
+
 .imagemlogo{
     margin: 2%;
+    margin-bottom: 0;
     flex-grow: 10;
-    width: 70%;
+    width: 68%;
     height: auto;
     z-index: -1;
     float: right;
@@ -64,7 +68,6 @@ nav{
 }
 
 ul{
-    font-family: 'Dosis',sans-serif;
     display: inline-block;
     float: right;
     margin-bottom: auto;
@@ -192,11 +195,23 @@ input[type=text], input[type=password]{
 }
 
 select {
-    border-color: white;
-    border: 1px;
+    background: rgb(255, 255, 255);
+    margin: 3px;
+    border: 2px;
     border-style: solid;
     border-radius: 5px;
+    border-color: black;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 0 0 3px black;
     
+}
+
+select:hover {
+    background: rgb(231, 231, 231);
+    box-shadow: 0px 2px 3px black;
+    color: black;
+
 }
 
 select select{
@@ -254,7 +269,7 @@ h2{
 }   
 
 .titulouni{
-    font-family: 'Lobster', cursive;
+    font-family: 'Bree Serif', serif;
     font-size: 130%;
 
 }
@@ -299,5 +314,64 @@ h2{
     box-shadow: 0px 2px 3px black;
     color: black;
     border-color: black;
+
+
+}
+
+.titulodescricao{
+    width: 100%;  
+    height: auto;         
+    background: rgb(139, 94, 57);
+    box-shadow: 0 0 10px black; 
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.h1descricao{
+    float: left;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+
+}
+
+.descricao{
+    padding: 30px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    border: 10px;
+    background: rgb(231, 231, 231);
+    border-color: rgb(139, 94, 57); ;
+    border-style:  dashed;
+    border-radius: 5px;
+    height: auto;
+    max-width: 600px;
+    color: black;
+    box-shadow: 0 0 20px black; 
+
+}
+
+.h1corpodes{
+    color: black;
+    font-family: 'Bree Serif',  serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.paragrafo::first-letter {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+.paragrafo{
+    text-align: justify;
 
 }
