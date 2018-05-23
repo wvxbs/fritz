@@ -38,7 +38,7 @@ body{
     width: 70%;
     height: auto;
     z-index: -1;
-    
+    float: right;
     box-shadow: 5px 5px 10px black;
 }
 
