@@ -7,23 +7,46 @@
     <title>Fritz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="shortcut icon" href="imagens/fritz.png">
+    <link rel="shortcut icon" href="icones/fritz.png">
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="body">
     <nav>
-        <a class="icone;" href="index.html"><img class="icone" src="imagens/fritzwhite.png"></a>
+        <a class="icone;" href="index.html"><img class="icone" src="icones/fritzwhite.png"></a>
         <ul>
             <li><a><input class="btnrest" type="button" value="Busca"></a></li>
             <li><a><input class="btnrest" type="button" value="Carrinho"></a></li>
-            <li><a><input class="btnrest" type="button" value="Login"></a></li>
+            <li><input class="btnrest" type="button" value="Entrar" id="btnentrar" onclick="Entrar()"></li>
         </ul>
     </nav>
+    <div class="entrar" id="entrar">
+        <img src="icones/fritz.png" class="icone" onclick="VoltaUni()">
+            <h1 class="bemvindo">Bem Vindo de Volta!</h1>
+                <form id="entrada">
+                    <input type="text" placeholder="E-Mail">
+                    <input type="password" placeholder="Senha">  
+                </form>
 
+                <a onclick="ExibirCadastro()" class="primeiravez" id="primeiravez">Primeira vez aqui ?</a>
+
+                <form id="cadastro" style="display: none">      
+                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="E-Mail">
+                    <input type="password" placeholder="Senha">
+                    <input type="password" placeholder="Confirmar Senha">
+                    <input type="text" id="cep" placeholder="CEP">
+                    <input type="text" id="rua" placeholder="Rua">
+                    <input type="text" id="bairro" placeholder="Bairro">
+                    <input type="text" id="cidade" placeholder="Cidade">
+                    <input type="text" id="uf" placeholder="Estado">
+                    <input type="text" id="uf" placeholder="Número">
+                    <input type="text" id="comp" placeholder="Complemento">
+                </form>
+    </div>
     <div>
-        <div class="filtro">
+        <div class="filtro" id="filtro">
             <h2>Filtros</h2>
             <div>
                 <p>Preço</p>    
@@ -35,7 +58,6 @@
                     </select>
             </div>
             <div>
-                
                     <select>
                         <option></option>
                         <option>AAAAAAAAA</option>
@@ -44,15 +66,12 @@
                         <option>CCCCCCCC</option>
                         <option>GAYYYYYYYYYY</option>
                         <option>XMPITO</option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
                     </select>
             </div>
             <div>
                 <form>
                     
-                    <select>
+                    <select placeholder="wow">
                         <option onclick="Densidade()">Padrão</option>
                         <option onclick="Densidade2()">Intenso</option>
                         <option onclick="Densidade3()">Insano</option>
@@ -68,18 +87,15 @@
                                                                         
                     </div>
                 <form>
-                    <input id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                    <input id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
                 </form>
             </div>
             <div  id="uni" class="unitario">
                 <b class="titulouni">Restaurante b</b><br>
-                    <div class="imguni">
-                                                                        
+                    <div class="imguni">                                                  
                     </div>
                 <form>
-          
-          
-                    <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                    <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -88,7 +104,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -97,7 +113,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -106,7 +122,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -115,7 +131,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -124,7 +140,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -133,7 +149,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -142,7 +158,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -151,7 +167,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -160,7 +176,7 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
             <div  id="uni" class="unitario">
@@ -169,29 +185,11 @@
                                                                         
                     </div>
                 <form>
-                <input  id="saibamais" class="saibamais"type="button" onclick="Clica2()" value="Saiba Mais">
+                <input  id="saibamais" class="saibamais"type="button" onclick="OcultarUni()" value="Saiba Mais">
             </form>
             </div>
         </div>
-    </div>
-<div class="login">
-    <h1 class="bemvindo">Bem Vindo de Volta!</h1>
-    <a>primeira vez aqui ?</a>
-        <form>      
-            <img src="imagens/fritz.png" class="icone">
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="E-Mail">
-            <input type="text" id="cep" placeholder="CEP">
-            <input type="text" id="rua" placeholder="Rua">
-            <input type="text" id="bairro" placeholder="Bairro">
-            <input type="text" id="cidade" placeholder="Cidade">
-            <input type="text" id="uf" placeholder="Estado">
-            <input type="text" id="comp" placeholder="Complemento">
-
-
-            
-        </form>
-
-</div>
-    
+    </div>    
+    <div class="info" id="info">
+        <div class="infotitulo">
 </body>

@@ -5,14 +5,7 @@ function Clica(){
     document.getElementById('idbotao').style.display = "none";
     document.getElementById('idheader').style.marginTop = "15px";
 
-}       
-
-function Clica2(){
-    var saibamais = document.getElementById('saibamais');
-    $(saibamais).fadeIn("medium");
-    document.getElementById('uni').style.display = "none";
-    
-}
+}     
 
 var x = document.getElementsByClassName("unitario");
 var i=0;
@@ -24,6 +17,7 @@ function Densidade() {
 
     }    
 }
+
 
 function Densidade2() {
     for(i = 0; i < x.length; i++) { 
@@ -39,6 +33,42 @@ function Densidade3(){
         x[i].style.height = "190px";
     }
 }
+
+function OcultarUni(){
+    document.getElementById('filtro').style.display = "none";
+    for(i = 0; i < x.length; i++) x[i].style.display = "none";
+    
+}
+
+function Entrar(){
+    var entrar = document.getElementById('entrar');
+    $(entrar).fadeIn("medium");
+    document.getElementById('filtro').style.display = "none";
+    for(i = 0; i < x.length; i++) x[i].style.display = "none";
+
+}
+
+function ExibirCadastro() {
+    var entrar =  document.getElementById('entrada');
+    $(entrar).fadeOut("fast");
+    var cadastro = document.getElementById('cadastro');
+    $(cadastro).fadeIn("fast");
+    document.getElementById('primeiravez').style.display = "none";
+}
+
+function VoltaUni() {
+    var entrar = document.getElementById('entrar');
+    $(entrar).fadeOut("fast");
+
+    for(i =0; i <x.length; i++) {
+        x[i].style.display= "inline-block";
+
+    }    
+    document.getElementById('filtro').style.display = "inline-block";
+    
+}
+
+
 //
 $(document).ready(function () {
     function limpa_formulário_cep() {

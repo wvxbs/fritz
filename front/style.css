@@ -9,6 +9,44 @@ body{
     
 }
 
+.aheader{
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.titulo{
+    text-align: center;
+    margin: 2%;
+    width: 30%;
+    height: 500px;
+    background: rgb(139, 94, 57); 
+    z-index: 1;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
+.titulo:hover {
+    -shadow: 5px 5px 30px black;
+}
+
+.imagemlogo{
+    margin: 2%;
+    flex-grow: 10;
+    width: 70%;
+    height: auto;
+    z-index: -1;
+    
+    box-shadow: 5px 5px 10px black;
+}
+
+.imagemlogo:hover{
+    box-shadow: 5px 5px 30px black;
+
+}
+
 nav{
     font-family: 'Dosis',sans-serif;
     text-align: none;
@@ -17,11 +55,7 @@ nav{
     padding: 20px;
     padding-top: 10px;
     color: inherit;
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> bc6d1bbe9b35107ab5440079b1060bbc805f7ad7
 }
 
 .centro{
@@ -46,6 +80,7 @@ li, a{
 }
 
 h1{
+    padding: 0;
     color: rgb(255, 255, 255);
     font-family: 'Lobster', cursive;
     font-size: 200px;
@@ -55,28 +90,28 @@ h1{
 
 }
 
-.login {
+.entrar{
+    text-align: center;
     margin: auto;
     padding: 15px;
-    width: auto;
+    width: 600px;
     height: auto;
     background: rgb(230, 230, 230);
     color: black;
+    display: none;
+    border-radius: 5px; 
 
+
+}
+
+.primeiravez:hover{
+    color: rgb(56, 56, 56);
 
 }
 
 .bemvindo{
     font-size:80px;
     color: inherit;
-
-}
-
-
-header{
-    text-align: center;
-    margin: 5px;
-    margin-top: 130px;
 
 }
 
@@ -119,6 +154,20 @@ header{
 
 }
 
+.btnrest2 {  
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    border-style: none;
+    border-color: white;
+    color: inherit;
+    transition-duration: 40ms;
+    cursor: inherit;
+    padding: 15px;
+    background: none;
+
+}
+
 .btnrest:hover {
     background: rgb(231, 231, 231);
     box-shadow: 0px 2px 3px black;
@@ -126,7 +175,7 @@ header{
 
 }
 
-input[type=text]{
+input[type=text], input[type=password]{
     margin: 10px;
     font-family: inherit;
     font-size: 20px;
@@ -168,12 +217,15 @@ select select{
 }
 
 .filtro{
-
     text-decoration: none;
     width: 80%;
     margin: auto;
     text-align: center;
 
+}
+
+h2{
+    font-family: 'Lobster', cursive;
 }
 
 .stream1{
@@ -207,7 +259,7 @@ select select{
 
 }
 
-imguni{
+.imguni{
     display: grid;
 }
 
@@ -221,8 +273,7 @@ imguni{
 }
 
 .icone:hover{
-    background: rgb(0, 0, 0);
-    box-shadow: 0px 2px 3px black;
+    box-shadow: 0 0 3px black;
     color: black;
     border: 2px;
 
