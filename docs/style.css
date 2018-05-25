@@ -14,6 +14,7 @@ body{
 
 .titulo{
     text-align: center;
+    color: rgb(255, 255, 255);
     margin: 4%;
     width: 30%;
     height: 500px;
@@ -367,19 +368,26 @@ h2{
 @media only screen and (max-width: 800px) {
     h1{
         font-size: 900%;
+        color: black;
 
     }
 
     .titulo{
         width: 100%;
-        margin: 0;
         height: 100%;
+        background: white;
+        color: black;
 
     }
 
     .imagemlogo{
         display: none;
 
+    }
+
+    .btninicio{
+        color: black;
+        border-color: black;
     }
 
 }
@@ -387,19 +395,27 @@ h2{
 @media only screen and (max-width: 1200px) {
     h1{
         font-size: 1000%;
+        color: black
 
     }
 
     .titulo{
+        margin: auto;
         width: 100%;
-        margin: 0;
         height: 100%;
+        background: rgb(233, 233, 233);
+        color: black;
 
     }
 
     .imagemlogo{
         display: none;
 
+    }
+
+    .btninicio{
+        color: black;
+        border-color: black;
     }
 
 }
