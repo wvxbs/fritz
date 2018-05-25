@@ -3,18 +3,10 @@
 body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
-    color: white;
-    background: rgb(37, 37, 37);
+    color: black;
+    background: rgb(252, 252, 252);
     -moz-user-select: none; 
     
-}
-
-.aheader{
-    height: 1000px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
 }
 
 
@@ -23,17 +15,11 @@ body{
     margin: 4%;
     width: 30%;
     height: 500px;
-    background: rgb(139, 94, 57); 
+    background: rgb(0, 0, 0); 
     z-index: 1;
-    box-shadow: 5px 5px 10px black;
-    position: fixed;
+    position: absolute;
 
 }
-
-.titulo:hover {
-    -shadow: 5px 5px 30px black;
-}
-
 
 .imagemlogo{
     margin: 2%;
@@ -43,13 +29,22 @@ body{
     height: auto;
     z-index: -1;
     float: right;
-    box-shadow: 5px 5px 10px black;
+    border: 15px;
+    border-style: solid;
+    border-color: black
 }
 
-.imagemlogo:hover{
-    box-shadow: 5px 5px 30px black;
+h1{
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Lobster', cursive;
+    font-size: 1200%;
+    margin: 0;
+    user-select: none;
+    -moz-user-select: none;
 
 }
+
 
 nav{
     font-family: 'Dosis',sans-serif;
@@ -82,25 +77,14 @@ li, a{
 
 }
 
-h1{
-    padding: 0;
-    color: rgb(255, 255, 255);
-    font-family: 'Lobster', cursive;
-    font-size: 200px;
-    margin: 0;
-    user-select: none;
-    -moz-user-select: none;
-
-}
-
 .entrar{
     text-align: center;
     margin: auto;
     padding: 15px;
     width: 600px;
     height: auto;
-    background: rgb(230, 230, 230);
-    color: black;
+    background: rgb(0, 0, 0);
+    color: white;
     display: none;
     border-radius: 5px; 
 
@@ -126,7 +110,7 @@ h1{
     border: 2px;
     border-style: solid;    
     border-radius: 5px;
-    color:inherit;
+    color:white;
     border-color: white;
     background: rgba(255, 0, 0, 0);
     transition-duration: 40ms;
@@ -194,27 +178,24 @@ input[type=text], input[type=password]{
 
 }
 
-select {
+.select-customizado {
     background: rgb(255, 255, 255);
-    margin: 3px;
     border: 2px;
     border-style: solid;
     border-radius: 5px;
+    padding: 5px;
     border-color: black;
-    display: inline-block;
     font-family: 'Dosis', sans-serif;
-    box-shadow: 0 0 3px black;
     
 }
 
-select:hover {
-    background: rgb(231, 231, 231);
-    box-shadow: 0px 2px 3px black;
+.select-customizado:hover {  
+    box-shadow: 0px 0px 3px black;
     color: black;
 
 }
 
-select select{
+.select-customizado:{
     display: none;
 
 }
@@ -233,14 +214,16 @@ select select{
 
 .filtro{
     text-decoration: none;
-    width: 80%;
+    width: auto;
     margin: auto;
     text-align: center;
+    display: inline;
 
 }
 
 h2{
     font-family: 'Lobster', cursive;
+
 }
 
 .stream1{
@@ -254,17 +237,20 @@ h2{
     height: auto;
     margin: auto;
     text-align: center;
+
 }
 
 .unitario {
     text-align: center;
     display: inline-block;
     margin: 10px;
-    background: rgb(139, 94, 57);
+    color: white;
+    background: rgb(0, 0, 0);
     padding: 5px;
     width: 50%;
     height: 300px;  
-    box-shadow: 0px 2px 4px black;
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
     
 }   
 
@@ -315,7 +301,6 @@ h2{
     color: black;
     border-color: black;
 
-
 }
 
 .titulodescricao{
@@ -329,6 +314,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
 
 .h1descricao{
@@ -373,6 +359,44 @@ h2{
 
 .paragrafo{
     text-align: justify;
+
+}
+
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 900%;
+
+    }
+
+    .titulo{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .imagemlogo{
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    h1{
+        font-size: 1000%;
+
+    }
+
+    .titulo{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .imagemlogo{
+        display: none;
+
+    }
 
 }
 
