@@ -4,6 +4,7 @@ body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
     border: 0;
+    padding: 0;
     color: black;
     background: rgb(252, 252, 252);
     -moz-user-select: none; 
@@ -371,6 +372,7 @@ h2{
 
     .titulo{
         width: 100%;
+        margin: 0;
         height: 100%;
 
     }
@@ -390,6 +392,7 @@ h2{
 
     .titulo{
         width: 100%;
+        margin: 0;
         height: 100%;
 
     }
