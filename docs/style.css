@@ -3,6 +3,7 @@
 body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
+    border: 0;
     color: black;
     background: rgb(252, 252, 252);
     -moz-user-select: none; 
