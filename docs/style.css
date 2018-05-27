@@ -91,13 +91,14 @@ ul{
 }
 
     .navesquerda{
-        background: black;
+        background: rgb(62, 128, 158);
         margin: 0;
         padding: 0;
         float: left;
         height: 100%;
         width: 30%;
         z-index: 1000;
+        box-shadow: 0 0 15px grey;
 
     }
 
