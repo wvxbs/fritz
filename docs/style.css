@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab');
 
 body{
     font-family: 'Fjalla One', sans-serif;
@@ -6,15 +6,18 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(245, 245, 245);
+    background: rgb(255, 255, 255);
     -moz-user-select: none; 
     
 }
+.principal{
+    overflow: none;
 
+}
 
 .titulo{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(218, 224, 236);
     margin: 4%;
     width: 30%;
     height: 500px;
@@ -51,25 +54,78 @@ h1{
 
 }
 
-
 nav{
-    background: rgb(0, 0, 0);
-    font-family: 'Dosis',sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', sans;
     text-align: none;
-    height: 70px;
+    height: 550px;
     margin: 0; 
     width: 100%;
     top: 0;
-    position: fixed;
-    padding: 10px;
     padding-top: 0;
     color: white;
-    box-shadow: 0 0 5px black;
+    text-align: none;
+    box-shadow: 0 0 10px grey;
+
+}
+
+ul{
+    padding: 10px;
+    display: inline;
+    margin-bottom: 6px;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+}
+    
+.blank{
+    display: none;
+        height: 80px;
+    }
+    
+.carrinho{
+
+}
+
+    .navesquerda{
+        background: black;
+        margin: 0;
+        padding: 0;
+        float: left;
+        height: 100%;
+        width: 30%;
+        z-index: 1000;
+
+    }
+
+    .navdireita{
+        background-image: url(imagens/brooke-lark-500141-unsplash.jpg);
+        background-size: 100%;
+        float: right;
+        height: 100%;
+        text-align: right;
+        width: 70%;
+        z-index: 9;
+    
+    }
+
+li, a{
+    margin-top: 25px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 10px;    
 
 }
 
 .blank{
-    height: 80px;
+    display: none;
+    height: 70px;
+
 }
 
 .centro{
@@ -77,34 +133,21 @@ nav{
 
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    float: right;
-    margin-bottom: 6px;
-
-}
-
-li, a{
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    font-size: 20px;    
-
-}
-
 .entrar{
     text-align: center;
     margin: auto;
     padding: 15px;
+    margin-top: 20px;
     width: 600px;
     height: auto;
-    background: rgb(0, 0, 0);
-    color: white;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 2px 3px black;
     display: none;
-    border-radius: 5px; 
-
 
 }
 
@@ -145,12 +188,12 @@ li, a{
 }
 
 .btnrest {  
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
+    font-family: inherit;
+    font-size: 30px;
+    color: black;
     text-decoration: none;
     border-style: none;
     border-color: white;
-    color: inherit;
     transition-duration: 40ms;
     cursor: inherit;
     padding: 15px;
@@ -159,7 +202,7 @@ li, a{
 }
 
 .btnrest2 {  
-    font-family: 'Lobster', cursive;
+    font-family: inherit;
     font-size: 40px;
     text-decoration: none;
     border-style: none;
@@ -188,10 +231,9 @@ input[type=text], input[type=password]{
     border: 2px;
     border-style: solid;
     border-radius: 5px;
-    border-color: white;
+    border-color: rgb(0, 0, 0);
     background: rgb(247, 247, 247);
     transition-duration: 40ms;
-    box-shadow: 0px 0px 2px black ;
 
 }
 
@@ -240,6 +282,7 @@ h2{
 }
 
 .stream1{
+    overflow: scroll;
     border-radius: 5px;
     padding: 30px;
     margin-top: 100px;
@@ -261,30 +304,50 @@ h2{
     background: white;
     padding: 5px;
     width: 50%;
-    height: 300px;  
-    border: 2px;
-    border-color: black;
-    border-style: solid;
+    height: auto;  
     border-radius: 3px;
-    box-shadow: 0 0 3px black;
+    box-shadow: 0 0px 5px grey;
     
 }   
 
 .titulouni{
     font-family: 'Bree Serif', serif;
-    font-size: 5vw;
+    font-size: 5vh;
+
+}
+
+.uniflex{
+    display: flex;
+    flex-wrap: nowrap
 
 }
 
 .imguni{
-    display: grid;
+    width: inherit;
+    height: auto;
+    display: inline;
+    margin: 5%;
+
+}
+
+.iconeuni{
+    width: 20%;
+    height: auto;
+
+}
+
+.puni{
+    font-size: 2vh;
+
 }
 
 .icone{
+    float: left;
     border-radius: 50%;
     width: 70px;
     height: 70px;
     margin-top: 5px;
+    margin: 10px;
     padding: 0;
 
 }
@@ -404,10 +467,14 @@ h2{
         border-color: black;
     }
 
-    .entrar {
-        width: 100%;
-        margin: 0;
-
+    nav{
+        background-image: none;
+        background: #ffffffce;
+        height: 80px;
+        padding: 10px;
+        display: fixed;
+        box-shadow: 0 0 5px grey;
+        border: none;
 
     }
 
@@ -453,6 +520,28 @@ h2{
     .btninicio{
         color: black;
         border-color: black;
+
+    }
+
+    nav{
+        background-image: none;
+        height: 70px;
+        padding: 10px;
+        position: fixed;
+    }
+
+    .blank{
+        display: block;
+
+    }
+
+    .entrar{
+        border: none;
+        margin: 0;
+        box-shadow: 0 0 0;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
     }
 
     li {

@@ -13,7 +13,7 @@ var i=0;
 function Densidade() {
     for(i =0; i <x.length; i++) {
         x[i].style.width =  "50%";
-        x[i].style.height = "300px";
+        x[i].style.height = "auto";
 
     }    
 }
@@ -22,7 +22,7 @@ function Densidade() {
 function Densidade2() {
     for(i = 0; i < x.length; i++) { 
         x[i].style.width = "30%";
-        x[i].style.height = "300px";
+        x[i].style.height = "auto";
 
     }
 }
@@ -30,7 +30,7 @@ function Densidade2() {
 function Densidade3(){
     for(i = 0; i < x.length; i++) {
         x[i].style.width = "20%";
-        x[i].style.height = "190px";
+        x[i].style.height = "auto";
     }
 }
 
