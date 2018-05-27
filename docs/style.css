@@ -6,7 +6,7 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(255, 255, 255);
+    background: rgb(238, 238, 238);
     -moz-user-select: none; 
     
 }
@@ -66,7 +66,7 @@ nav{
     padding-top: 0;
     color: white;
     text-align: none;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 25px grey;
 
 }
 
@@ -91,14 +91,14 @@ ul{
 }
 
     .navesquerda{
-        background: rgb(62, 128, 158);
+        background: rgb(0, 31, 51);
         margin: 0;
         padding: 0;
         float: left;
         height: 100%;
         width: 30%;
         z-index: 1000;
-        box-shadow: 0 0 15px grey;
+        box-shadow: 0 0 50px grey;
 
     }
 
@@ -141,9 +141,6 @@ li, a{
     margin-top: 20px;
     width: 600px;
     height: auto;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
     border-radius: 4px;
     background: rgb(255, 255, 255);
     color: black;
@@ -216,13 +213,6 @@ li, a{
 
 }
 
-.btnrest:hover {
-    background: rgb(231, 231, 231);
-    box-shadow: 0px 2px 3px black;
-    color: black;
-
-}
-
 input[type=text], input[type=password]{
     margin: 10px;
     font-family: inherit;
@@ -269,6 +259,7 @@ input[type=text], input[type=password]{
 
 .filtro{
     text-decoration: none;
+    font-family: inherit;
     width: auto;
     margin: auto;
     text-align: center;
@@ -278,7 +269,7 @@ input[type=text], input[type=password]{
 
 
 h2{
-    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
 
 }
 
@@ -302,12 +293,11 @@ h2{
     display: inline-block;
     margin: 10px;
     color: black;
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 5px;
     width: 50%;
     height: auto;  
-    border-radius: 3px;
-    box-shadow: 0 0px 5px grey;
+    box-shadow: 0px 20px 50px grey;
     
 }   
 
@@ -362,24 +352,22 @@ h2{
 
 .saibamais {
     font-size: 12px;
+    width: 200%;
     text-decoration: none;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: black;
     color: inherit;
+    border-style: none;
     transition-duration: 40ms;
     cursor: inherit;
-    padding: 2px;
-    background: none;
+    padding: 5px;
+    background: rgb(97, 217, 253);
     box-shadow: 0px 0px 1px black;
 
 }
 
-.saibamais:hover{
-    background: rgb(231, 231, 231);
-    box-shadow: 0px 2px 3px black;
+.saibamais:hover, .btnrest:hover{
+    background: rgb(186, 235, 250);
+    box-shadow: 0px 4px 10px grey;
     color: black;
-    border-color: black;
 
 }
 
@@ -543,6 +531,7 @@ h2{
         border-radius: 0;
         width: 100%;
         height: 100%;
+
     }
 
     li {
