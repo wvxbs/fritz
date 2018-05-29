@@ -338,7 +338,7 @@ h2{
 
 .icone{
     float: left;
-    border-radius: 50%;
+    border-radius: 5px;
     width: 70px;
     height: 70px;
     margin-top: 5px;
@@ -350,6 +350,7 @@ h2{
 .icone:hover{
     box-shadow: 0 0 3px black;
     color: black;
+    box-shadow: 0 0 15px turquoise;
     border: 2px;
 
 }
@@ -374,61 +375,36 @@ h2{
 
 }
 
-.titulodescricao{
-    width: 100%;  
-    height: auto;         
-    background: rgb(139, 94, 57);
-    box-shadow: 0 0 10px black; 
-    margin: 0;
-    padding: 8px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.navdesc{
+    background: white;
+    height: 100px;
+    border: 0;
+    padding: 0;
+    box-shadow: 0 0 25px grey;
 
 }
 
-.h1descricao{
-    float: left;
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
-
-}
-
-.descricao{
-    padding: 30px;
-    margin-top: 80px;
+.articledesc{
+    background: white;
+    width: 90%;
+    height: auto;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    border: 10px;
-    background: rgb(231, 231, 231);
-    border-color: rgb(139, 94, 57); ;
-    border-style:  dashed;
-    border-radius: 5px;
-    height: auto;
-    max-width: 600px;
-    color: black;
-    box-shadow: 0 0 20px black; 
+    padding: 10px;
+    box-shadow: 0 0 25px grey;
 
 }
 
-.h1corpodes{
-    color: black;
-    font-family: 'Bree Serif',  serif;
-    font-size: 40px;
-    text-align: center;
+.articledescdireita{
 
 }
 
-.paragrafo::first-letter {
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
-    text-transform: uppercase;
+.articledescesquerda{
 
 }
 
-.paragrafo{
-    text-align: justify;
-
+.pardesc{
+    
 }
