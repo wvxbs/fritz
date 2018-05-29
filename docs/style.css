@@ -385,26 +385,33 @@ h2{
 }
 
 .articledesc{
-    background: white;
-    width: 90%;
+    width: 100%;
     height: auto;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
     padding: 10px;
-    box-shadow: 0 0 25px grey;
 
 }
 
 .articledescdireita{
     
+    width: 40%;
+    height: auto;   
+
 }
 
 .articledescesquerda{
+    width: 60%;
+    height: auto;
 
 }
 
 .pardesc{
 
+    width: 90%;
+    background: white;
+    box-shadow: 0 0 15px grey;
+    
 }
