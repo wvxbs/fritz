@@ -44,7 +44,6 @@ function Entrar(){
     var entrar = document.getElementById('entrar');
     $(entrar).fadeIn("medium");
     document.getElementById('filtro').style.display = "none";
-    for(i = 0; i < x.length; i++) x[i].style.display = "none";
 
 }
 
@@ -54,7 +53,9 @@ function ExibirCadastro() {
     var cadastro = document.getElementById('cadastro');
     $(cadastro).fadeIn("fast");
     document.getElementById('primeiravez').style.display = "none";
+
 }
+
 
 function VoltaUni() {
     var entrar = document.getElementById('entrar');
@@ -64,7 +65,7 @@ function VoltaUni() {
         x[i].style.display= "inline-block";
 
     }    
-    document.getElementById('filtro').style.display = "inline";
+    document.getElementById('filtro').style.display = "block";
     
 }
 
