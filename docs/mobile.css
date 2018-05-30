@@ -9,7 +9,7 @@
         margin: auto;
         width: 100%;
         height: 100%;
-        background: rgb(255, 255, 255);
+        background: #fbff2c;
         color: black;
 
     }
@@ -26,18 +26,27 @@
 
     nav{
         background-image: none;
-        background: white;
-        height: 80px;
-        padding: 10px;
-        display: fixed;
+        background: #fbff2c;
+        height: 90px;
+        position: fixed;
         box-shadow: 0 0 5px grey;
         border: none;
 
     }
 
+    .blank{
+        display: block;
+    }
+
+    .navmob{
+        display: block;
+
+    }
+
     .navdireta, .navesquerda{
         display: none;
-        background-image: url();
+        background-image: url('');
+        background-size: 0;
 
     }
 
@@ -51,11 +60,12 @@
     }
 
     .btninicio:hover {
-        background: rgb(230, 230, 230);
+        background: black;
+        color: white;
     }
 
     .unitario{
-        width: 50%;
+        width: 40%;
         margin: 1%;
     }
 
@@ -63,6 +73,7 @@
         font-size: 200%;
     }
 }
+
 
 @media only screen and (max-width: 800px) {
     h1{
@@ -74,7 +85,7 @@
     .titulo{
         width: 100%;
         height: 100%;
-        background: white;
+        background: #fbff2c;
         color: black;
 
     }
@@ -90,10 +101,9 @@
 
     }
 
-    nav{
+    nav{    
         background-image: none;
-        height: 70px;
-        padding: 10px;
+        height: 90px;
         position: fixed;
     }
 
