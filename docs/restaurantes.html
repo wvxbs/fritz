@@ -44,14 +44,13 @@
                             </select>   
                 </div>
                 <div class="entrar" id="entrar">
-                    <img src="icones/fritz.png" class="icone" onclick="VoltaUni()">
+                    <img src="icones/delete-button.png" class="iconecancelar" onclick="CancelaEntrar()">
                         <h1 class="bemvindo">Bem Vindo de Volta!</h1>
                             <form id="entrada">
                                 <input type="text" placeholder="E-Mail">
-                                <input type="password" placeholder="Senha">  
+                                <input type="password" placeholder="Senha">
+                                <a onclick="ExibirCadastro()" class="primeiravez" id="primeiravez">Cadastre se !</a>          
                             </form>
-                            <a onclick="ExibirCadastro()" class="primeiravez" id="primeiravez">Primeira vez aqui ?</a>
-            
                             <form id="cadastro" style="display: none">      
                                 <input type="text" placeholder="Nome">
                                 <input type="text" placeholder="E-Mail">

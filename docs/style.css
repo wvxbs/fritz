@@ -153,13 +153,14 @@ li, a{
     margin: auto;
     padding: 15px;
     margin-top: 20px;
-    width: 600px;
+    width: 90%;
     height: auto;
     border-radius: 4px;
     background: rgb(255, 255, 255);
     color: black;
     box-shadow: 0 2px 3px black;
     display: none;
+    z-index: 1000;
 
 }
 
@@ -169,7 +170,7 @@ li, a{
 }
 
 .bemvindo{
-    font-size:80px;
+    font-size:40px;
     color: inherit;
 
 }
@@ -251,8 +252,7 @@ input[type=text], input[type=password]{
 }
 
 .select-customizado:hover, .densidade:hover {  
-    box-shadow: 0px 0px 30px black;
-    color: black;
+    border-color: rgb(48, 48, 48);
 
 }
 
@@ -345,6 +345,21 @@ h2{
 
 }
 
+.iconecancelar{
+    float: left;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+
+
+}
+
+.iconecancelar:hover{
+    background: red;
+
+}
+
 .icone{
     border-radius: 4px;
     float: left;
@@ -407,7 +422,6 @@ h2{
 }
 
 .articledescdireita{
-    
     width: 40%;
     height: auto;   
 
@@ -424,6 +438,16 @@ h2{
     background: white;
     box-shadow: 0 0 15px grey;
     
+}
+
+.divimgdesc{
+
+}
+
+.imgdesc{
+    width: 25%;
+    height: auto;
+
 }
 
     

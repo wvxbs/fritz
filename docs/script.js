@@ -1,4 +1,3 @@
-
 function Clica(){
     var endereco = document.getElementById('idendereco');
     $(endereco).fadeIn("medium");
@@ -17,7 +16,6 @@ function Densidade() {
 
     }    
 }
-
 
 function Densidade2() {
     for(i = 0; i < x.length; i++) { 
@@ -41,9 +39,13 @@ function OcultarUni(){
 }
 
 function Entrar(){
+    document.getElementById('filtro').style.display = "none";
     var entrar = document.getElementById('entrar');
     $(entrar).fadeIn("medium");
-    document.getElementById('filtro').style.display = "none";
+    document.getElementById('entrar').style.position = "relative";
+    document.getElementById('entrar').style.width = "90%";
+    document.getElementById('entrada').style.display = "block";
+    document.getElementById('cadastro').style.display = "none";
 
 }
 
@@ -52,21 +54,22 @@ function ExibirCadastro() {
     $(entrar).fadeOut("fast");
     var cadastro = document.getElementById('cadastro');
     $(cadastro).fadeIn("fast");
-    document.getElementById('primeiravez').style.display = "none";
+    document.getElementById('entrar').style.position = "fixed";
+    document.getElementById('entrar').style
+    for(i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
 
 }
 
 
-function VoltaUni() {
-    var entrar = document.getElementById('entrar');
-    $(entrar).fadeOut("fast");
-
-    for(i =0; i <x.length; i++) {
-        x[i].style.display= "inline-block";
-
-    }    
+function CancelaEntrar() {
+    document.getElementById('entrar').style.display = "none"; 
     document.getElementById('filtro').style.display = "block";
-    
+    for(i = 0; i < x.length; i++) {
+        $(x[i]).fadeIn("medium");
+    }
+
 }
 
 
