@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab');
 
-.body{
-    font-family: 'Fjalla One', sans-serif;
-    margin: auto;
-    border: 0;
-    padding: 0;
-    color: black;
-    background: rgb(44, 44, 44);
-    user-select: none;
-    -moz-user-select: none; 
-    
-}
+.load {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-left: 16px solid pink;
+    width: 120px;
+    height: 120px;
+    animation: giro 3s linear infinite;
+
+  }
+  
+  @keyframes giro {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+
+  }
 
 body{
     font-family: 'Fjalla One', sans-serif;
@@ -40,6 +47,7 @@ body{
     z-index: 1;
     position: absolute;
     box-shadow:  0 0 30px black;
+    box-shadow: 0 0 1000px;
 
 }
 
@@ -91,12 +99,15 @@ ul{
     
 .blank{
         display: none;
-        height: 120px;
+        height: 150px;
     }
     
 .carrinho{
 
 }
+    .menunavmobicone, .menunavmob{
+        display: none;
+    }
 
     .navesquerda{
         background:#fbff2c;
@@ -152,9 +163,11 @@ li, a{
 
 .entrar{
     text-align: center;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding: 15px;
     margin-top: 20px;
+    margin-bottom: 30px;
     width: 70%;
     height: auto;
     border-radius: 10px;
@@ -163,6 +176,28 @@ li, a{
     box-shadow: 0 10px 40px rgb(26, 26, 26);
     display: none;
     z-index: 1000;
+
+}
+
+.btnentrar, .btncadastrar{
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    width: 120px;
+    text-decoration: none;
+    color: inherit;
+    border-style: none;
+    transition-duration: 40ms;
+    border: 3px;
+    padding: 5px;
+    background: yellow;
+    box-shadow: 0 0 2px grey;
+
+}
+
+.btnentrar:hover, .btncadastrar:hover{
+    background: black;
+    box-shadow: 0 0 15px grey;
+    color: white;
 
 }
 
@@ -242,6 +277,11 @@ input[type=text], input[type=password]{
 
 }
 
+.cadastro {
+    display: none;
+    z-index: 99 !important;
+}
+
 .select-customizado, .densidade {
     background: none;
     border: 2px;
@@ -306,7 +346,7 @@ h2{
 .unitario {
     text-align: none;
     display: inline-block;
-    margin: 2%;
+    margin: 3%;
     color: black;
     background: rgb(255, 255, 255);
     padding: 10px;

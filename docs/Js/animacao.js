@@ -1,6 +1,6 @@
 const titulo = popmotion.styler(document.querySelector('.titulo'));
 
-function Demo(){
+object.onload = function Demo(){
     const sphere = new THREE.Mesh(geometry, material);
     const sphereY = value(5, (v) => sphere.position.y = v);
 
