@@ -43,7 +43,7 @@ function Entrar(){
     var entrar = document.getElementById('entrar');
     $(entrar).fadeIn("medium");
     document.getElementById('entrar').style.position = "relative";
-    document.getElementById('entrar').style.width = "90%";
+    document.getElementById('entrar').style.width = "80%";
     document.getElementById('entrada').style.display = "block";
     document.getElementById('cadastro').style.display = "none";
 
