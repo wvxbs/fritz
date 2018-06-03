@@ -23,7 +23,7 @@
         height: auto;
         background: #fbff2c;
         color: black;
-        box-shadow: 0 0 15px grey;
+        box-shadow: 0 0 15px black;
 
     }
 
@@ -43,7 +43,7 @@
         height: 90px;
         width: 100%;
         position: fixed;
-        box-shadow: 0 0 10px grey;
+        box-shadow: 0 0 10px black;
         border: none;
         margin-bottom: 10px;
 
@@ -85,7 +85,7 @@
     .unitario{
         width: 40%;
         margin: 1%;
-        box-shadow: 0 2px 10px grey;
+        box-shadow: 0 2px 10px rgb(34, 34, 34);
     }
 
     .titulouni {
@@ -171,7 +171,7 @@
 
     }
     .unitario{
-        box-shadow: 0 0 5px grey;
+        box-shadow: 0 0 5px rgb(39, 39, 39);
         font-size: 4vw;
         width: 100%;
         margin: auto;

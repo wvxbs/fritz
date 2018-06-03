@@ -56,7 +56,7 @@ function Entrar(){
 
 }
 
-function EdivsibirCadastro() {
+function ExibirCadastro() {
     var entrar =  document.getElementById('entrada');
     $(entrar).fadeOut("fast");
     var cadastro = document.getElementById('cadastro');

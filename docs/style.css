@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab');
 
-.load {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    border-left: 16px solid pink;
-    width: 120px;
-    height: 120px;
-    animation: giro 3s linear infinite;
-
-  }
-  
-  @keyframes giro {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-
-  }
-
 body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
@@ -105,40 +86,123 @@ ul{
 .carrinho{
 
 }
-    .menunavmobicone, .menunavmob{
-        display: none;
-    }
 
-    .navesquerda{
-        background:#fbff2c;
-        margin: 0;
-        padding: 0;
-        float: left;
-        height: 100%;
-        width: 30%;
-        z-index: 1000;
-        box-shadow: 0 0 50px black;
+.menunavmobicone, .menunavmob{
+    display: none;
+}
 
-    }
 
-    .navdireita{
-        background-image: url(imagens/hermes-rivera-645990-unsplash.jpg);
-        background-size: 100%;
-        float: right;
-        height: 100%;
-        text-align: right;
-        width: 70%;
-        z-index: 3;
+
+.navesquerda{
+    background: #fbff2c;
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 100%;
+    width: 30%;
+    z-index: 1000;
+    box-shadow: 0 0 50px black;
+
+}
+
+@keyframes square1{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+@keyframes square2{
+    4%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+@keyframes square3{
+    8%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+@keyframes square4{
+    16%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+
+.square1, .square2, .square3, .square4 {
+    border-radius: 4px;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin: 13px;
+    float: right;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 0px;
+    background: none;
+    animation: square;
+    position: absolute;
+
+}
+
+.square1{
+    z-index: 1;
+    animation: square1;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.square2{
+    z-index: 2;
+    animation: square2;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.square3{
+    z-index: 3;
+    animation: square3;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.square4{
+    z-index: 4;
+    animation: square4;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.navdireita{
+    background-image: url(imagens/hermes-rivera-645990-unsplash.jpg);
+    background-size: 100%;
+    float: right;
+    height: 100%;
+    text-align: right;
+    width: 70%;
+    z-index: 3;
     
     }  
 
-    .navmob{
-        margin: 0;
-        padding: 0;
-        display: none;
-        background: none;
-        float: left;
-    }
+.navmob{
+    margin: 0;
+    padding: 0;
+    display: none;
+    background: none;
+    float: left;
+
+}
 
 li, a{
     margin-top: 25px;
@@ -231,7 +295,7 @@ li, a{
 
 .btninicio:hover{
     background: black;
-    box-shadow: 0px 0px 100px black;
+    box-shadow: 0px 0px 10px black;
     color: white;
     transition-duration: 40ms;
 
@@ -403,7 +467,7 @@ h2{
 }
 
 .icone{
-    border-radius: 4px;
+    border-radius: 2px;
     float: left;
     width: 70px;
     height: 70px;
