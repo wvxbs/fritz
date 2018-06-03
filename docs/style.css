@@ -81,7 +81,7 @@ ul{
 .blank{
         display: none;
         height: 150px;
-    }
+}
     
 .carrinho{
 
@@ -90,8 +90,6 @@ ul{
 .menunavmobicone, .menunavmob{
     display: none;
 }
-
-
 
 .navesquerda{
     background: #fbff2c;
@@ -513,6 +511,7 @@ h2{
     border: 0;
     padding: 0;
     box-shadow: 0 0 25px black;
+    position: fixed;
 
 }
 

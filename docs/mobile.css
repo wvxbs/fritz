@@ -39,6 +39,7 @@
 
     nav, .navdesc{
         background-image: none;
+        background-size: 0;
         background: #fbff2c;
         height: 90px;
         width: 100%;
@@ -145,10 +146,11 @@
 
     }
 
-    nav{    
+    nav{   
         background-image: none;
         height: 90px;
         position: fixed;
+
     }
 
     .blank{
