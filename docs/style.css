@@ -8,7 +8,7 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(44, 44, 44);
+    background: rgb(43, 43, 43);
     user-select: none;
     -moz-user-select: none; 
 }
@@ -24,7 +24,7 @@ body{
     margin: 4%;
     width: 30%;
     height: 500px;
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     z-index: 1;
     position: absolute;
     box-shadow:  0 0 30px black;
@@ -80,7 +80,7 @@ ul{
     
 .blank{
         display: none;
-        height: 150px;
+        height: 160px;
 }
     
 .carrinho{
@@ -92,7 +92,7 @@ ul{
 }
 
 .navesquerda{
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     margin: 0;
     padding: 0;
     float: left;
@@ -493,7 +493,7 @@ h2{
     transition-duration: 40ms;
     border: 3px;
     padding: 5px;
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     box-shadow: 0px 0px 1px black;
 
 }
@@ -506,7 +506,7 @@ h2{
 }
 
 .navdesc{
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     height: 100px;
     border: 0;
     padding: 0;
