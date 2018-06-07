@@ -1,24 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab');
-
-.load {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    border-left: 16px solid pink;
-    width: 120px;
-    height: 120px;
-    animation: giro 3s linear infinite;
-
-  }
-  
-  @keyframes giro {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-
-  }
-
 body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
@@ -105,8 +85,9 @@ ul{
 .carrinho{
 
 }
-    .menunavmobicone, .menunavmob{
-        display: none;
+
+        .menunavmobicone, .menunavmob{
+
     }
 
     .navesquerda{
