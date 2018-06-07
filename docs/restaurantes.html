@@ -6,19 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fritz - Restaurantes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css   ">
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="animation.scss">
     <link rel="shortcut icon" href="icones/fritzsquarewhite.png">
     <script src="Js/script.js"></script>
     <script src="Js/action.js"></script>
-    <script src="Js/animacao.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
 </head>
-<body onload="Demo">
+<body>
 <div id="body">
     <nav>   
+            <div style="position: absolute">
+                    <div class="square1">
+                        <span></span>
+                    </div>
+                    <div class="square2">
+                        <span></span>
+                    </div>
+                    <div class="square3">
+                        <span></span>
+                    </div>
+                    <div class="square4">
+                        <span></span>
+                    </div>
+                    <a class="icone;" href="index.html"><img class="icone" src="icones/fritzsquare.png"></a>
+                    </div>
         <div class="navesquerda">
-            <a class="icone;" href="index.html"><img class="icone" src="icones/fritzsquare.png"></a>
+                <div class="nulo" style="height: 120px "></div>
                 <div class="filtro" id="filtro">
                     <h2>Filtros</h2>
                         <p>Preço</p>    
@@ -35,7 +50,7 @@
                                 <option>BBBBBBBBB</option>
                                 <option>CCCCCCCC</option>
                                 <option>CCCCCCCC</option>
-                                <option>GAYYYYYYYYYY</option>
+                                <option>yo</option>
                                 <option>XMPITO</option>
                             </select>
                         <p>Exibição</p>
@@ -70,8 +85,7 @@
                             </form>
                 </div>
         </div>
-        <div class="navmob">
-            <img class="icone" src="icones/fritzsquare.png">
+        <div class="navmob"> 
             <img class="menunavmobicone" src="icones/delete-button.png" onclick="DisplayMenuMob()">
                 <div class="menunavmob" id="menunavmob">
                     <ul>

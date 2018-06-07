@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab');
+
 body{
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
@@ -7,7 +8,7 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(44, 44, 44);
+    background: rgb(43, 43, 43);
     user-select: none;
     -moz-user-select: none; 
 }
@@ -23,7 +24,7 @@ body{
     margin: 4%;
     width: 30%;
     height: 500px;
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     z-index: 1;
     position: absolute;
     box-shadow:  0 0 30px black;
@@ -79,47 +80,127 @@ ul{
     
 .blank{
         display: none;
-        height: 150px;
-    }
+        height: 160px;
+}
     
 .carrinho{
 
 }
 
-        .menunavmobicone, .menunavmob{
+.menunavmobicone, .menunavmob{
+    display: none;
+}
 
-    }
+.navesquerda{
+    background: rgb(224, 128, 37);
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 100%;
+    width: 30%;
+    z-index: 1000;
+    box-shadow: 0 0 50px black;
 
-    .navesquerda{
-        background:#fbff2c;
-        margin: 0;
-        padding: 0;
-        float: left;
-        height: 100%;
-        width: 30%;
-        z-index: 1000;
-        box-shadow: 0 0 50px black;
+}
 
-    }
+@keyframes square1{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
 
-    .navdireita{
-        background-image: url(imagens/hermes-rivera-645990-unsplash.jpg);
-        background-size: 100%;
-        float: right;
-        height: 100%;
-        text-align: right;
-        width: 70%;
-        z-index: 3;
+@keyframes square2{
+    4%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+@keyframes square3{
+    8%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+@keyframes square4{
+    16%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+    
+}
+
+
+.square1, .square2, .square3, .square4 {
+    border-radius: 4px;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin: 13px;
+    float: right;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 0px;
+    background: none;
+    animation: square;
+    position: absolute;
+
+}
+
+.square1{
+    z-index: 1;
+    animation: square1;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.square2{
+    z-index: 2;
+    animation: square2;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.square3{
+    z-index: 3;
+    animation: square3;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.square4{
+    z-index: 4;
+    animation: square4;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.navdireita{
+    background-image: url(imagens/hermes-rivera-645990-unsplash.jpg);
+    background-size: 100%;
+    float: right;
+    height: 100%;
+    text-align: right;
+    width: 70%;
+    z-index: 3;
     
     }  
 
-    .navmob{
-        margin: 0;
-        padding: 0;
-        display: none;
-        background: none;
-        float: left;
-    }
+.navmob{
+    margin: 0;
+    padding: 0;
+    display: none;
+    background: none;
+    float: left;
+
+}
 
 li, a{
     margin-top: 25px;
@@ -212,7 +293,7 @@ li, a{
 
 .btninicio:hover{
     background: black;
-    box-shadow: 0px 0px 100px black;
+    box-shadow: 0px 0px 10px black;
     color: white;
     transition-duration: 40ms;
 
@@ -384,7 +465,7 @@ h2{
 }
 
 .icone{
-    border-radius: 4px;
+    border-radius: 2px;
     float: left;
     width: 70px;
     height: 70px;
@@ -412,7 +493,7 @@ h2{
     transition-duration: 40ms;
     border: 3px;
     padding: 5px;
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     box-shadow: 0px 0px 1px black;
 
 }
@@ -425,11 +506,12 @@ h2{
 }
 
 .navdesc{
-    background: #fbff2c;
+    background: rgb(224, 128, 37);
     height: 100px;
     border: 0;
     padding: 0;
     box-shadow: 0 0 25px black;
+    position: fixed;
 
 }
 
