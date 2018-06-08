@@ -54,6 +54,8 @@ function Entrar(){
     document.getElementById('cadastro').style.display = "none";
     document.getElementById('entrar').style.marginLeft = "auto"; 
 
+
+
 }
 
 function ExibirCadastro() {
@@ -67,6 +69,7 @@ function ExibirCadastro() {
         divs[i].style.display = "none";
 
     }
+    
 
 }
 
