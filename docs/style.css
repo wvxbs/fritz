@@ -8,7 +8,7 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(43, 43, 43);
+    background: rgb(255, 255, 255);
     user-select: none;
     -moz-user-select: none; 
 }
@@ -418,6 +418,10 @@ h2{
     
 }   
 
+.divtitulouni{
+
+}
+q
 .titulouni{
     font-family: 'Bree Serif', serif;
     font-size: 30px;
@@ -454,7 +458,7 @@ h2{
     height: 30px;
     width: 30px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 50%; 
 
 
 }
