@@ -22,15 +22,15 @@
 
     .titulo{
         position: relative;
+        margin-top: 3%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50%;
-        margin-bottom: 50%; 
+        margin-bottom: auto; 
         width: 50%;
         height: auto;
         background: rgb(224, 128, 37);
+        box-shadow: none;
         color: black;
-        box-shadow: 0 0 15px black;
 
     }
 
@@ -44,15 +44,28 @@
         border-color: black;
     }
 
+    .icone{
+        margin: 6px;
+        padding: 0;
+
+    }
+
+    .square1, .square2, .square3, .square4{
+        display: none;    
+
+    }
+
+
     nav, .navdesc{
         background-image: none;
         background-size: 0;
         background: rgb(224, 128, 37);; 
-        height: 90px;
+        height: 85px;
         width: 100%;
         position: fixed;
         box-shadow: 0 0 10px black;
         border: none;
+        padding: 0;
         margin-bottom: 10px;
 
     }
@@ -66,18 +79,15 @@
 
     }
 
-    .navdireta, .navesquerda{
+    .navdireita, .navesquerda{
         display: none;
-        background-size: 0%;
-        background-image: none;
-        background-origin: none;
-        background: white;
 
     }
 
     .divmob{
         display: block;
-        height: 130px;
+        height: auto;
+
     }
 
     .densidade{
