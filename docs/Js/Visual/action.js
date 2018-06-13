@@ -1,9 +1,9 @@
-var docWidth = document.documentElement.offsetWidth;
+var largura = document.documentElement.offsetWidth;
 
 [].forEach.call(
   document.querySelectorAll('*'),
   function(el) {
-    if (el.offsetWidth > docWidth) {
+    if (el.offsetWidth > largura) {
       console.log(el);
     }
   }
@@ -13,7 +13,7 @@ function Clica(){
     var endereco = document.getElementById('idendereco');
     $(endereco).fadeIn("medium");
     document.getElementById('idbotao').style.display = "none";
-    document.getElementById('idheader').style.marginTop = "15pdivs";
+    document.getElementById('idheader').style.marginTop = "15px";
 
 }
 

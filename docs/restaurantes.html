@@ -10,17 +10,20 @@
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
     <link rel="stylesheet" type="text/css" media="screen" href="animation.scss">
     <link rel="shortcut icon" href="icones/fritzsquarewhite.png">
-    <script src="Js/script.js"></script>
-    <script src="Js/action.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="Js/contentRestaurante.js"></script>
+    <script src="Js/Visual/script.js"></script>
+    <script src="Js/Visual/action.js"></script>
+    <script src="Js/Visual/animacao.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="body">
     <nav>   
             <div style="position: absolute">
-                    <div class="square1">
+                    <a href="index.html" class="square1">
                         <span></span>
-                    </div>
+                    </a>
                     <div class="square2">
                         <span></span>
                     </div>
@@ -38,14 +41,14 @@
                     <h2>Filtros</h2>
                         <p>Preço</p>    
                             <select class="select-customizado">
-                                <option></option>
+                                <option selected>Todos</option>
                                 <option>$</option>
                                 <option>$$</option>
                                 <option>$$$</option>
                             </select>
                         <p>TIpo de Comida</p>
-                            <select class="select-customizado">
-                                <option></option>
+                            <select class="select-customizado" id="tipocomida">
+                                <option selected>Todos</option>
                                 <option>AAAAAAAAA</option>
                                 <option>BBBBBBBBB</option>
                                 <option>CCCCCCCC</option>
@@ -109,52 +112,14 @@
     <div class="blank"></div>
         <div class="stream1">
             <div  id="uni" class="unitario">
-                <b class="titulouni">Restaurante a</b><br>
+                <b class="titulouni" id="tituloUni">{{ nomeRestaurante }}</b><br>
                         <div class="imguni">
-                            <img src="icones/mc-donalds-logo-15d562c9-fb90-44c2-9628-c3185cc4afc7.jpg" class="iconeuni">
-                                <div class="">
-                                    <p class="puni">comida daora gostosa nham nham</p>
-                                </div>                                                                        
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
                         </div>
-                <form>
-                <a href="descricao.html"><input id="saibamais" class="saibamais"type="button" value="Saiba Mais"></a>
-                </form>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="saibamais" onclick></a>   
+                        </form>
             </div>
-            <div  id="uni" class="unitario">
-                <b class="titulouni">Restaurante a</b><br>
-                        <div class="imguni">
-                            <img src="icones/mc-donalds-logo-15d562c9-fb90-44c2-9628-c3185cc4afc7.jpg" class="iconeuni">
-                                <div class="">
-                                    <p class="puni">comida daora gostosa nham nham</p>
-                                </div>                                                                        
-                        </div>
-                <form>
-                <a href="descricao.html"><input id="saibamais" class="saibamais"type="button" value="Saiba Mais"></a>
-                </form>
-            </div>
-            <div  id="uni" class="unitario">
-                <b class="titulouni">Restaurante a</b><br>
-                        <div class="imguni">
-                            <img src="icones/mc-donalds-logo-15d562c9-fb90-44c2-9628-c3185cc4afc7.jpg" class="iconeuni">
-                                <div class="">
-                                    <p class="puni">comida daora gostosa nham nham</p>
-                                </div>                                                                        
-                        </div>
-                <form>
-                <a href="descricao.html"><input id="saibamais" class="saibamais"type="button" value="Saiba Mais"></a>
-                </form>
-            </div>
-            <div  id="uni" class="unitario">
-                <b class="titulouni">Restaurante a</b><br>
-                        <div class="imguni">
-                            <img src="icones/mc-donalds-logo-15d562c9-fb90-44c2-9628-c3185cc4afc7.jpg" class="iconeuni">
-                                <div class="">
-                                    <p class="puni">comida daora gostosa nham nham</p>
-                                </div>                                                                        
-                        </div>
-                <form>
-                <a href="descricao.html"><input id="saibamais" class="saibamais"type="button" value="Saiba Mais"></a>
-                </form>
-            </div>  bt
-    </div>    
+        </div>
+    </div>
 </body>
