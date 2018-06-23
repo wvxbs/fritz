@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
     <script src="Js/animacao.js"></script>
+    <script src="Js/Visual/action.js"></script>
 </head>
 <body>
     <div class="navdesc">
@@ -28,66 +28,29 @@
                 <span></span>
             </div>
             <a href="restaurantes.html"><img class="icone" src="icones/fritzsquare.png"></a>
+            <div class="navdescdireita">
+                <ul>
+                    <li onclick="ExibirBusca()"><a><input class="btnrest" type="button" value="Busca"></a></li>
+                    <li><a><input class="btnrest" type="button" value="Carrinho"></a></li>
+                    <li><input class="btnrest" type="button" value="Entrar" id="btnentrar" onclick="Entrar()"></li>
+                </ul>
+            </div>
     </div>
     <div class="blankdesc"></div>
     <div class="articledesc">
-        <div class="articledescesquerda">
                 <div class="divpardesc" id="divpardesc">
                     <h1 class="titulodesc">Restaurante a</h1>
-                    <p class="pardesc" id="pardesc">Mano eu sou muito gay na moral e esse restaurente vende comida vegana pode ser ?</p>
+                    <p class="pardesc" id="pardesc">Restaurante de comida vegana, feita com amor e vendida a preços justos</p>
                 </div>
-        </div>
-        <div class="articledescdireita">
-            <div class="divimgdesc">
-                   <img class="imgdesc" src="imagens/brooke-lark-500141-unsplash.jpg">
-                   <img class="imgdesc" src="imagens/monkgogi-samson-487376-unsplash.jpg">
-                   <img class="imgdesc" src="imagens/jaco-pretorius-514735-unsplash.jpg">
-                   <img class="imgdesc" src="imagens/yvonne-lee-harijanto-41745-unsplash.jpg">
-            </div>
-        </div>
+                <h4 class="precodesc">Faixa de Preço: $</h4>    
     </div>
     <div class="produtos">
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo class="produtos"o">Produto a</h1>    
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo class="produtos"o">Produto b</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo class="produtos"o">Produto c</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
-                </div>
-                <div class="descproduto">
-                    <h1 class="descprodutotitulo" class="produtos">Produto d</h1>
+                <div class="descproduto" style="background-image: url(imagens/Produtos/edgar-castrejon-459811-unsplash.jpg); background-size:100%">
+                    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
+                    <div class="descprodutodesc"></div>
+                        <div class="addcarrinho">
+                            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
+                        </div>    
                 </div>
         </div>
     </div>

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8"   />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fritz - Restaurantes</title>
+    <title>Fritz | Restaurantes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css   ">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
     <link rel="stylesheet" type="text/css" media="screen" href="animation.scss">
     <link rel="shortcut icon" href="icones/fritzsquarewhite.png">
@@ -27,7 +26,7 @@
                     <div class="square2">
                         <span></span>
                     </div>
-                    <div class="square3">
+                    <div cla    ss="square3">
                         <span></span>
                     </div>
                     <div class="square4">
@@ -36,7 +35,7 @@
                     <a class="icone;" href="index.html"><img class="icone" src="icones/fritzsquare.png"></a>
                     </div>
         <div class="navesquerda">
-                <div class="nulo" style="height: 120px "></div>
+            <div class="nulo" style="height: 120px "></div>
                 <div class="filtro" id="filtro">
                     <h2>Filtros</h2>
                         <p class="nomefiltro">Preço</p>    
@@ -49,12 +48,7 @@
                         <p class="nomefiltro">Tipo de Comida</p>
                             <select class="select-customizado" id="tipocomida">
                                 <option selected>Todos</option>
-                                <option>AAAAAAAAA</option>
-                                <option>BBBBBBBBB</option>
-                                <option>CCCCCCCC</option>
-                                <option>CCCCCCCC</option>
-                                <option>yo</option>
-                                <option>XMPITO</option>
+                                <option></option>
                             </select>
                         <p class="nomefiltro">Exibição</p>
                             <select placeholder="wow" class="densidade">
@@ -64,11 +58,11 @@
                             </select>   
                 </div>
                 <div class="entrar" id="entrar">
-                    <img src="icones/delete-button.png" class="iconecancelar" onclick="CancelaEntrar()">
-                        <h1 class="bemvindo">Bem Vindo de Volta!</h1>
+                    <img src="icones/if_Left_arrow_2202280.png" class="iconecancelar" onclick="CancelaEntrar()">
+                        <h1 class="bemvindo">Bem Vindo de Volta!</h1><br>
                             <form id="entrada">
-                                <input type="text" placeholder="E-Mail" name = "email" required>
-                                <input type="password" placeholder="Senha" name = "senha" required>
+                                <input type="text" placeholder="E-Mail" name = "email" required><br>
+                                <input type="password" placeholder="Senha" name = "senha" required><br>
                                 <input type="submit" value="Entrar" class="btnentrar" id="entrar"><br>
                                 <a onclick="ExibirCadastro()" class="primeiravez" id="primeiravez">Cadastre se !</a>          
                             </form>
@@ -100,24 +94,183 @@
         </div>
         <div class="navdireita">
             <ul>
-                <li><a><input class="btnrest" type="button" value="Busca"></a></li>
+                <li onclick="ExibirBusca()"><a><input class="btnrest" type="button" value="Busca"></a></li>
                 <li><a><input class="btnrest" type="button" value="Carrinho"></a></li>
                 <li><input class="btnrest" type="button" value="Entrar" id="btnentrar" onclick="Entrar()"></li>
             </ul>
         </div>
         <div class="divmob">
-            
         </div>
     </nav>
+    <div class="busca">
+        <div class="barrapesquisa">
+            <img src="icones/icons8-google-web-search-50.png" class="barrapesquisaicone"></img>
+            <form><input class="txtbusca" type="text" placeholder="Digite aqui o que deseja achar"></input></form>
+        </div>
+    </div>
     <div class="blank"></div>
         <div class="stream1">
             <div  id="uni" class="unitario">
-                <b class="titulouni" id="tituloUni">{{ nomeRestaurante }}</b><br>
+                <b class="titulouni" id="tituloUni">Restaurante a</b><br>
                         <div class="imguni">
                             <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
                         </div>
                         <form>
-                            <a href="descricao.html"><input type="button" class="saibamais" value="saibamais" onclick></a>   
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante b</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante c</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante d</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante e</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante f</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante g</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante h</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante i</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante j</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante k</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante l</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante m</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante n</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante o</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante p</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante q</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
+                        </form>
+            </div>
+            <div  id="uni" class="unitario">
+                <b class="titulouni" id="tituloUni">Restaurante r</b><br>
+                        <div class="imguni">
+                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
+                        </div>
+                        <div class=".descprodutoinfosecao">
+                        <form>
+                            <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
                         </form>
             </div>
         </div>

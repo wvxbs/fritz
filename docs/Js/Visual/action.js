@@ -23,6 +23,16 @@ function DisplayMenuMob(){
     
 }
 
+function ExibirBusca(){
+    document.getElementsByClassName('busca').style.display = "block";
+
+}
+
+function OcultarBusca(){
+    document.getElementsByClassName('busca').style.display = "none";
+
+}
+
 var divs = document.getElementsByClassName("unitario");
 var i=0;
 
@@ -84,11 +94,36 @@ function ExibirCadastro() {
 
 }
 
-
 function CancelaEntrar() {
     document.getElementById('entrar').style.display = "none"; 
     var filtro = document.getElementById('filtro');
     $(filtro).fadeIn("medium");
     for(i = 0; i < divs.length; i++) $(divs[i]).fadeIn("medium");
 
+}
+
+function ExibeEntrarRestante() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
+}
+
+function FechaEntrarRestante(){
+    var popup = document.getElementsByClassName("entrarrest");
+    popup.classList.toggle("hide");
+
+}
+
+function ExibirProdutoDesc(){
+    var seta = document.getElementsByClassName('descprodutoseta');
+    var transform = document.getElementsByClassName('descprodutodesc');
+        $(seta).click(function(){
+            $('descprodutodesctransform').toggleClass('descprodutodesctransform-active');
+        });
+
+}
+
+function OcultarProdutoDesc(){
+    var seta = document.getElementsByClassName('descprodutoseta');
+    var transform = document.getElementsByClassName('descprodutodesc');       
 }

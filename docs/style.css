@@ -65,7 +65,7 @@ nav{
     top: 0;
     padding-top: 0;
     text-align: none;
-    box-shadow: 0 0 25px rgb(77, 77, 77);
+    box-shadow: 0 0 40px grey;
 
 }
 
@@ -103,7 +103,7 @@ ul{
     height: 100%;
     width: 30%;
     z-index: 1000;
-    box-shadow: 0 0 50px rgb(77, 77, 77);
+    box-shadow: 0 0 100px grey;
 
 }
 
@@ -187,6 +187,7 @@ ul{
 }
 
 .navdireita{
+    color: white;
     background-image: url(imagens/hermes-rivera-645990-unsplash.jpg);
     background-size: 100%;
     float: right;
@@ -228,6 +229,7 @@ li, a{
 }
 
 .entrar{
+    display: none;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -239,7 +241,7 @@ li, a{
     border-radius: 10px;
     background: rgb(255, 255, 255);
     color: black;
-    box-shadow: 0 10px 40px rgb(26, 26, 26);
+    box-shadow: 0 0 10px rgb(48, 48, 48);
     display: none;
     z-index: 1000;
 
@@ -250,6 +252,13 @@ li, a{
     box-shadow: 0 0 15px grey;
     color: white;
 
+}
+
+.entrarRestante{
+    display: none;
+    position: fixed;
+    z-index: 9999 !important;
+    
 }
 
 .primeiravez:hover{
@@ -289,9 +298,9 @@ li, a{
 }
 
 .btnrest {  
-    font-family: inherit;
+    font-family: 'Roboto Slab', serif;
     font-size: 30px;
-    color: white;
+    color: inherit;
     text-decoration: none;
     border-style: none;
     transition-duration: 40ms;
@@ -386,6 +395,29 @@ h2{
     font-family: 'Lato', sans-serif;
 }
 
+.busca{ 
+    display: none;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    background: black;
+
+}
+
+.txtbusca{
+    background: none;
+    border: none;
+    
+}
+
+.barrapesquisa{
+
+}
+
+.barrapesquisaicone{
+
+}
+
 .stream1{
     padding-top: 15px;
     padding-bottom: 0;
@@ -399,21 +431,18 @@ h2{
 }
 
 .unitario {
-    text-align: none;
+    text-align: center;
     display: inline-block;
     margin: 3%;
     color: black;
     background: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 15px;
     width: 20%;
     height: auto;  
     box-shadow: 0px 20px 50px grey;
     
 }   
 
-.divtitulouni{
-
-}
 
 .titulouni{
     font-family: 'Bree Serif', serif;
@@ -422,12 +451,12 @@ h2{
 }
 
 .imguni{
-    text-align: center;
     border-radius: 5px;
-    width: 75%;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 5%;
+    margin: 0;
+    float: left;
 
 }
 
@@ -449,11 +478,10 @@ h2{
     margin: 10px;
     border-radius: 50%; 
 
-
 }
 
 .iconecancelar:hover{
-    background: red; 
+    
 
 }
 
@@ -510,20 +538,32 @@ h2{
 
 }
 
-.pardesc{}
+.pardesc{
+    color: rgb(49, 49, 49);
+
+}
 
 .navdesc{
-    background: rgb(255, 123, 0);
+    background: none;
     width: 100%;
     height: 90px;
     border: 0;
     padding: 0;
-    box-shadow: 0 0 12px rgb(46, 46, 46);
     position: fixed;
 
 }
 
+.navdescdireita{
+    float: right;
+
+}
+
+.navdescdireita .btnrest:hover{
+    box-shadow: 0px 15px 27px grey; 
+}
+
 .articledesc{
+    text-align: center;
     padding: 20px;
     width: 100%;
     height: auto;
@@ -531,34 +571,8 @@ h2{
 
 }
 
-.articledescdireita{
-    float:right;
-    width:62%;
-    margin: 20px;
-    padding: 60px;
-
-}
-
-.articledescesquerda{
-    float: left;    
-    width: 27%;
-    height: auto;
-    
-}
-
-.articledescabaixo{
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-    background: white;
-    box-shadow: 0 0 15px grey;
-    
-}
-
-.divimgdesc{
-    width: 90%;
-    background: white;
-    padding: 30px;
+.precodesc{
+    color: rgb(36, 36, 36);
 }
 
 .imgdesc{
@@ -578,16 +592,77 @@ h2{
     background: white;
     padding: 20px;
     margin: 1%;
+    border-radius: 100px;
     display: inline-block;
-    height: 200px;
-    width: 18%;
-    box-shadow: 0 15px 15px grey;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 40px 30px grey;
 
+}
+
+.descproduto:hover{
+    transform: scale(1.30, 1.30) 
+}
+
+.descprodutoseta{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.descprodutodesctransform{
+    transition: all 1s ease;
+}
+
+.descprodutodesctransform-active{
+    width: 
+}
+
+.descprodutodesc{
+    background: white;
+    padding: 5px;
+    font-family: 'Dosis', sans-serif;
+    width: 50%;
+    height: auto;
+    padding: 8px;
+    box-shadow: 0 20px 20px black;
+
+}
+
+.addcarrinho{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background: rgb(255, 123, 0);
+    border-radius: 30px;
+    box-shadow: 0 10 50px black;
+    margin-top: 80px;
+    float: right;
+
+}
+
+
+.addcarrinhoicone{
+    width: 20px;
+    height: 20px;
+
+}  
+
+.addcarrinho:hover{
+    background: rgb(255, 156, 63);
 }
 
 .descprodutotitulo{
-    line-height: 200px;
-    font-family: 'Roboto Slab', serif;
-    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    width: 50%;
+    padding: 8px;
+    border-radius:3px;
+    background: rgb(255, 123, 0);
+    color: black;
+    box-shadow: 0 10 15px black;
 
 }
+
