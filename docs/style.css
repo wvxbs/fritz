@@ -9,7 +9,7 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(247, 247, 247);
+    background: rgb(248, 248, 248);
     user-select: none;
     -moz-user-select: none; 
 }
@@ -83,7 +83,7 @@ ul{
 }
 
 .blankdesc{
-    height: 90px;
+    height: 100px;
 
 }
     
@@ -247,18 +247,31 @@ li, a{
 
 }
 
+.entrarrest{
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 50px grey);
+    display: none;
+    z-index: 1000;
+
+}
+
+
 .btnentrar:hover, .btncadastrar:hover{
     background: black;
     box-shadow: 0 0 15px grey;
     color: white;
 
-}
-
-.entrarRestante{
-    display: none;
-    position: fixed;
-    z-index: 9999 !important;
-    
 }
 
 .primeiravez:hover{
@@ -544,12 +557,13 @@ h2{
 }
 
 .navdesc{
-    background: none;
+    background: rgb(255, 123, 0);
     width: 100%;
     height: 90px;
     border: 0;
     padding: 0;
     position: fixed;
+    box-shadow: 0 0 10px grey;
 
 }
 
@@ -559,7 +573,7 @@ h2{
 }
 
 .navdescdireita .btnrest:hover{
-    box-shadow: 0px 15px 27px grey; 
+    box-shadow: 0px 0 15px rgb(53, 53, 53); 
 }
 
 .articledesc{
@@ -589,19 +603,31 @@ h2{
 }
 
 .descproduto{
+    z-index: -1;
     background: white;
     padding: 20px;
-    margin: 1%;
+    margin: 2%;
     border-radius: 100px;
     display: inline-block;
     height: 150px;
     width: 150px;
-    box-shadow: 0 40px 30px grey;
+    box-shadow: 0 0 15px grey;
 
 }
 
 .descproduto:hover{
-    transform: scale(1.30, 1.30) 
+    z-index: -1;
+    box-shadow: 0 0 20px grey;    
+
+}
+
+.descproduto:hover .navdesc{
+    z-index: 1000 !important;
+}
+
+.descproduto:hover .addcarrinho{
+    opacity: 1;
+
 }
 
 .descprodutoseta{
@@ -614,10 +640,12 @@ h2{
 
 .descprodutodesctransform{
     transition: all 1s ease;
+
 }
 
 .descprodutodesctransform-active{
-    width: 
+    width: ;
+
 }
 
 .descprodutodesc{
@@ -632,14 +660,16 @@ h2{
 }
 
 .addcarrinho{
+    opacity: 0.0;
     width: 20px;
     height: 20px;
     padding: 10px;
     background: rgb(255, 123, 0);
     border-radius: 30px;
     box-shadow: 0 10 50px black;
-    margin-top: 80px;
+    margin-top: 40px;
     float: right;
+    animation: 1s linear;
 
 }
 
