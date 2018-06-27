@@ -26,13 +26,13 @@
                     <div class="square2">
                         <span></span>
                     </div>
-                    <div cla    ss="square3">
+                    <div class="square3">
                         <span></span>
                     </div>
                     <div class="square4">
                         <span></span>
                     </div>
-                    <a class="icone;" href="index.html"><img class="icone" src="icones/fritzsquare.png"></a>
+                    <a class="icone;" href="index.html"><img class="icone" id="iconerestaurante" src="icones/fritzsquare.png"></a>
                     </div>
         <div class="navesquerda">
             <div class="nulo" style="height: 120px "></div>
@@ -84,13 +84,12 @@
         </div>
         <div class="navmob"> 
             <img class="menunavmobicone" src="icones/delete-button.png" onclick="DisplayMenuMob()">
-                <div class="menunavmob" id="menunavmob">
-                    <ul>
-                        <li><a>Busca</a></li>
-                        <li><a>Carrinho</a></li>
-                        <li><a>Entrar</a></li>
-                    </ul>
-                </div>
+            <div class="navdescdireita" id="navmobdireita">
+                <ul>
+                    <li onclick="ExibirBusca()"><a><input class="btnrest" type="button" value="Busca"></a></li>
+                    <li><a><input class="btnrest" type="button" value="Carrinho"></a></li>
+                    <li><a href="entrar.html"><input class="btnrest" type="button" value="Entrar" id="btnentrar" onclick="Entrar()"></a></li>
+                </ul>
         </div>
         <div class="navdireita">
             <ul>

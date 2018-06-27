@@ -76,14 +76,10 @@
         padding: 0;
         margin-bottom: 10px;
 
-    }
+    } 
 
     .blank{
         height: 90px;
-        display: block;
-    }
-
-    .navmob{
         display: block;
 
     }
@@ -92,6 +88,12 @@
         display: none;
 
     }
+
+    .navmob{
+        display: block;
+
+    }
+
 
     .divmob{
         display: block;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab|Lato');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab|Roboto|Google+Sans|Lato');
 
 body{
     position: absolute;
@@ -91,7 +91,7 @@ ul{
 
 }
 
-.menunavmobicone, .menunavmob{
+.menunavmobicone, .menunavmob, .navmobesquerda, .navmobdireita{
     display: none;
 }
 
@@ -311,7 +311,7 @@ li, a{
 }
 
 .btnrest {  
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: inherit;
     text-decoration: none;
@@ -519,7 +519,7 @@ h2{
 
 .saibamais, .btnentrar, .btncadastrar {
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: 15px;
     width: 150px;
     text-decoration: none;
