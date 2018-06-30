@@ -78,6 +78,15 @@
 
     } 
 
+    .navdescdireita{
+        float: right;
+
+    }
+
+    #navmobdireita{
+        float: right;
+    }
+
     .blank{
         height: 90px;
         display: block;

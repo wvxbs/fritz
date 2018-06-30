@@ -567,11 +567,6 @@ h2{
 
 }
 
-.navdescdireita{
-    float: right;
-
-}
-
 .navdescdireita .btnrest:hover{
     box-shadow: 0px 0 15px rgb(53, 53, 53); 
 }
