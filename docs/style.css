@@ -9,7 +9,7 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: rgb(248, 248, 248);
+    background: #F5F5F5;
     user-select: none;
     -moz-user-select: none; 
 }
@@ -65,7 +65,7 @@ nav{
     top: 0;
     padding-top: 0;
     text-align: none;
-    box-shadow: 0 0 40px grey;
+    box-shadow: 0 0 10px rgb(46, 46, 46);
 
 }
 
@@ -93,6 +93,7 @@ ul{
 
 .menunavmobicone, .menunavmob, .navmobesquerda, .navmobdireita{
     display: none;
+
 }
 
 .navesquerda{
@@ -103,86 +104,6 @@ ul{
     height: 100%;
     width: 30%;
     z-index: 1000;
-    box-shadow: 0 0 100px grey;
-
-}
-
-@keyframes square1{
-    0%{transform: rotate(0deg)}
-    100%{transform: rotate(360deg)}
-    
-}
-
-@keyframes square2{
-    4%{transform: rotate(0deg)}
-    100%{transform: rotate(360deg)}
-    
-}
-
-@keyframes square3{
-    8%{transform: rotate(0deg)}
-    100%{transform: rotate(360deg)}
-    
-}
-
-@keyframes square4{
-    16%{transform: rotate(0deg)}
-    100%{transform: rotate(360deg)}
-    
-}
-
-
-.square1, .square2, .square3, .square4 {
-    border-radius: 4px;
-    float: left;
-    width: 65px;
-    height: 65px;
-    margin-top: 5px;
-    margin: 13px;
-    float: right;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    padding: 0px;
-    background: none;
-    animation: square;
-    position: absolute;
-
-}
-
-.square1{
-    z-index: 1;
-    animation: square1;
-    animation-fill-mode: forwards;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
-}
-
-.square2{
-    z-index: 2;
-    animation: square2;
-    animation-fill-mode: forwards;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
-}
-
-.square3{
-    z-index: 3;
-    animation: square3;
-    animation-fill-mode: forwards;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
-}
-
-.square4{
-    z-index: 4;
-    animation: square4;
-    animation-fill-mode: forwards;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
 
 }
 
@@ -323,8 +244,9 @@ li, a{
 }
 
 .btnrest2 {  
-    font-family: inherit;
-    font-size: 40px;
+    color: rgb(44, 44, 44);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
     text-decoration: none;
     border-style: none;
     color: inherit;
@@ -362,7 +284,7 @@ input[type=text], input[type=password]{
     border-radius: 5px;
     padding: 5px;
     border-color: black;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     
 }
 
@@ -452,7 +374,8 @@ h2{
     padding: 15px;
     width: 20%;
     height: auto;  
-    box-shadow: 0px 20px 50px grey;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px grey;
     
 }   
 
@@ -501,18 +424,21 @@ h2{
 .icone{
     border-radius: 2px;
     float: left;
-    width: 65px;
-    height: 65px;
-    margin-top: 5px;
-    margin: 10px;
-    padding: 0;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
 
 }
 
+.iconerest{
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    padding: 0;
+}
+
 .icone:hover{
-    box-shadow: 0 0 3px black;
-    color: black;
-    box-shadow: 0 0 25px black;
+    box-shadow: 0 1px 2px rgb(39, 39, 39);
     border: 2px;
 
 }
@@ -521,20 +447,28 @@ h2{
     color: white;
     font-family: 'Google Sans', sans-serif;
     font-size: 15px;
-    width: 150px;
+    width: 120px;
     text-decoration: none;
     border-style: none;
-    border-radius: 30px;
+    border-radius: 4px;
     transition-duration: 40ms;
     border: 3px;
-    padding: 12px;
+    padding: 8px;
     background: rgb(255, 123, 0);
+    box-shadow: 0 2px 2px grey;
 
 }
 
 .saibamais:hover, .btnrest:hover{
     background: black;
-    box-shadow: 0px 15px 27px grey;
+    box-shadow: 0px 2px 5px grey;
+    color: white;
+
+}
+
+.btnrest2:hover{
+    background: black;
+    box-shadow: 0px 2px 5px rgb(48, 48, 48);
     color: white;
 
 }
@@ -546,12 +480,13 @@ h2{
 
 .titulodesc {
     color: rgb(36, 36, 36);
-    font-family: 'Bree Serif', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 50px;
 
 }
 
 .pardesc{
+    font-family: 'Google Sans', sans-serif;
     color: rgb(49, 49, 49);
 
 }
@@ -559,14 +494,19 @@ h2{
 .navdesc{
     background: rgb(255, 123, 0);
     width: 100%;
-    height: 90px;
+    height: 70px;
     border: 0;
+    margin: 0;
     padding: 0;
     position: fixed;
     box-shadow: 0 0 10px grey;
 
 }
 
+.navdescdireita{
+    float: right;
+
+}
 .navdescdireita .btnrest:hover{
     box-shadow: 0px 0 15px rgb(53, 53, 53); 
 }
@@ -600,19 +540,19 @@ h2{
 .descproduto{
     z-index: -1;
     background: white;
-    padding: 20px;
+    padding: 0px;
     margin: 2%;
-    border-radius: 100px;
+    border-radius: 5px;
     display: inline-block;
-    height: 150px;
-    width: 150px;
-    box-shadow: 0 0 15px grey;
+    height: auto;
+    width: auto;
+    box-shadow: 0 2px 5px grey;
 
 }
 
 .descproduto:hover{
     z-index: -1;
-    box-shadow: 0 0 20px grey;    
+    box-shadow: 0 5px 10px grey;    
 
 }
 
@@ -623,6 +563,11 @@ h2{
 .descproduto:hover .addcarrinho{
     opacity: 1;
 
+}
+
+.descprodutoimg{
+    size: auto;
+    width: 150px;
 }
 
 .descprodutoseta{
@@ -643,51 +588,54 @@ h2{
 
 }
 
-.descprodutodesc{
+.descprodutodiv{
+    margin-top: auto;
     background: white;
-    padding: 5px;
     font-family: 'Dosis', sans-serif;
-    width: 50%;
+    padding:;
+    width: 150px;
     height: auto;
-    padding: 8px;
-    box-shadow: 0 20px 20px black;
+    background: white;
+    color: black;
 
 }
 
-.addcarrinho{
-    opacity: 0.0;
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    background: rgb(255, 123, 0);
-    border-radius: 30px;
-    box-shadow: 0 10 50px black;
-    margin-top: 40px;
-    float: right;
-    animation: 1s linear;
+.descprodutodesc{
 
-}
-
-
-.addcarrinhoicone{
-    width: 20px;
-    height: 20px;
-
-}  
-
-.addcarrinho:hover{
-    background: rgb(255, 156, 63);
 }
 
 .descprodutotitulo{
     font-family: 'Lato', sans-serif;
     font-size: 13px;
-    width: 50%;
-    padding: 8px;
-    border-radius:3px;
-    background: rgb(255, 123, 0);
-    color: black;
-    box-shadow: 0 10 15px black;
 
 }
+
+.addcarrinho{
+    opacity: 0.0;
+    width: auto;
+    height: auto;
+    padding: 6px;
+    background: rgb(255, 123, 0);
+    border-radius: 30px;
+    box-shadow: 0 10 50px black;
+    margin-top: 0;
+    position: absolute;
+    float: right;
+    animation: 1s linear;
+    box-shadow: 0 2px 5px grey;
+
+}
+
+
+.addcarrinhoicone{
+    width: 25px;
+    height: 25px;
+
+}  
+
+.addcarrinho:hover{
+    background: rgb(255, 156, 63);
+    box-shadow: 0 4px 10px grey;
+}
+
 

@@ -58,11 +58,6 @@
 
     }
 
-    .square1, .square2, .square3, .square4{
-        display: none;    
-
-    }
-
 
     nav, .nav   {
         background-image: none;
@@ -178,11 +173,10 @@
 
     .descproduto{
         text-align: center;
-        box-shadow: none;
-        width: 30%;
+        width: 200px;
         margin: 0;
         padding: 0;
-        height: 200px;;
+        height: 200px;
         
     }
 
@@ -278,6 +272,7 @@
         border-style: solid;
         box-shadow: none;
         font-size: 4vw;
+        padding: 2%;
         width: 100%;
         margin: auto;
         margin-bottom: 15px;
@@ -287,6 +282,7 @@
     .imguni{
         margin: 0;
         padding: 0;
+
     }
 
     .titulouni{
@@ -298,6 +294,16 @@
         text-align: center;
         width: 100%;
         height: 250px;
+        border-radius: 0px; 
+        
+    }
+
+    .descprodutodiv{
+        box-shadow: none;
+    }
+
+    .descprodutodesc{
+        width: 100%;
         
     }
 
