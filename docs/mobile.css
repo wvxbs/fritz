@@ -1,6 +1,5 @@
 @media only screen and (max-width: 1200px) {
     body{
-        background: white;
         margin-right: auto;
         margin-left: auto;
         padding: 0;
@@ -53,23 +52,25 @@
     }
 
     .icone{
-        margin: 6px;
+        width: 50px;
+        height: 50px;
+        margin: 4px;
         padding: 0;
 
     }
 
 
-    nav, .nav   {
+    nav, .nav, .navdesc {
         background-image: none;
         background-size: 0;
-        background: rgb(255, 123, 0);; 
-        height: 90px;
+        background: rgb(255, 123, 0); 
+        height: 70px;
         width: 100%;
         position: fixed;
-        box-shadow: 0 0 10px black;
         border: none;
         padding: 0;
         margin-bottom: 10px;
+        box-shadow: 0 0 6px rgb(80, 80, 80)
 
     } 
 
@@ -83,7 +84,7 @@
     }
 
     .blank{
-        height: 90px;
+        height: 70px;
         display: block;
 
     }
@@ -157,14 +158,14 @@
         margin: 0;
     }
 
-    .produto{
+    .produtos{
+        background: none;
         padding: 0;
         margin: 0;
 
     }
 
     .descprodutotitulo{
-        border-radius: 30px;
         box-shadow: none;
         border-top: 20px;
         color: black;
@@ -173,17 +174,15 @@
 
     .descproduto{
         text-align: center;
-        width: 200px;
-        margin: 0;
+        margin: 2   %;
         padding: 0;
-        height: 200px;
         
     }
 
     .descprodutotitulo{
-        width: 80%;
+        width: 100%;
         margin: auto;
-        margin-top: 10px;
+
     }
 }
 
@@ -241,7 +240,7 @@
 
     nav{   
         background-image: none;
-        height: 90px;
+        height: 70px;
         position: fixed;
 
     }
@@ -290,12 +289,10 @@
 
     }
 
-    .descproduto{
-        text-align: center;
-        width: 100%;
-        height: 250px;
-        border-radius: 0px; 
-        
+    .descprodutoimg{
+        width: 150px;
+        height: 120px;
+
     }
 
     .descprodutodiv{
