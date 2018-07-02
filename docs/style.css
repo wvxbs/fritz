@@ -391,6 +391,11 @@ h2{
 
 }
 
+.precouni{
+    color: rgb(75, 75, 75);
+    
+}
+
 .imguni{
     border-radius: 5px;
     width: 100%;
@@ -576,6 +581,7 @@ h2{
 }
 
 .descprodutoseta{
+    transform: rotate(180deg);
     width: 15px;
     height: 15px;
     padding: 0;
@@ -584,7 +590,7 @@ h2{
 }
 
 .descprodutoseta:hover{
-    transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2) rotate(180deg);  
 }
 
 .descprodutodesctransform{

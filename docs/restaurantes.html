@@ -9,12 +9,11 @@
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
     <link rel="stylesheet" type="text/css" media="screen" href="animation.scss">
     <link rel="shortcut icon" href="icones/fritzsquarewhite.png">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="Js/contentRestaurante.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue"></script>   
     <script src="Js/Visual/script.js"></script>
     <script src="Js/Visual/action.js"></script>
-    <script src="Js/Visual/animacao.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="Js/Visual/animacao.js"></script>   
 </head>
 <body>
 <div id="body">
@@ -99,7 +98,8 @@
     <div class="blank"></div>
         <div class="stream1">
             <div  id="uni" class="unitario">
-                <b class="titulouni" id="tituloUni">Restaurante a</b><br>
+                <b class="titulouni">{{  titulouni }}</b>
+                    <b class="precouni">{{ precouni }}<b><br>
                         <div class="imguni">
                             <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
                         </div>
@@ -110,5 +110,6 @@
         </div>
     </div>
     <footer></footer>
+    <script src="Js/Content/contentRestaurante.js"></script>
 </body>
 </html>

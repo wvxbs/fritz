@@ -138,6 +138,11 @@ function ExibirProdutoDesc(){
 
 }
 
+function SetaAbrir(){
+     document.getElementsByClassName('descprodutoseta');
+
+}
+
 function OcultarProdutoDesc(){
     var seta = document.getElementsByClassName('descprodutoseta');
     var transform = document.getElementsByClassName('descprodutodesc');

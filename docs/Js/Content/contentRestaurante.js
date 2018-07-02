@@ -1,6 +1,14 @@
-const uni = new Vue({
-    el: '#uni',
+var titulouni = new Vue({
+    el: '.titulouni',
     data: {
-        nomeRestaurante: "Bolinhos Lindinhos"
+        titulouni: 'Bolinhos Lindinhos'
     }
 });
+
+var precouni = new Vue({
+    el: '.precouni',
+    data: {
+        precouni: '$'
+    }
+});
+
