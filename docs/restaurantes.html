@@ -33,9 +33,8 @@
                                 <option>$$$</option>
                             </select>
                         <p class="nomefiltro">Tipo de Comida</p>
-                            <select class="select-customizado" id="tipocomida">
-                                <option selected>Todos</option>
-                                <option></option>
+                            <select class="select-customizado" id="tipocomida" v-model="selected">
+                                <option v-for="option in options" v-bind:value="option.value"> {{ option.text }}</option>
                             </select>
                         <p class="nomefiltro">Exibição</p>
                             <select placeholder="wow" class="densidade">
@@ -100,9 +99,7 @@
             <div  id="uni" class="unitario">
                 <b class="titulouni">{{  titulouni }}</b>
                     <b class="precouni">{{ precouni }}<b><br>
-                        <div class="imguni">
-                            <img src="imagens/fabio-alves-386882-unsplash.jpg" class="imguni">
-                        </div>
+                            <img src="{{ imguni }}" class="imguni">
                         <form>
                             <a href="descricao.html"><input type="button" class="saibamais" value="Saiba Mais" onclick></a>   
                         </form>

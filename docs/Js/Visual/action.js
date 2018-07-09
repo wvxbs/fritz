@@ -33,13 +33,14 @@ function OcultarBusca(){
 
 }
 
-var divs = document.getElementsByClassName("unitario");
+var imguni = document.getElementsByClassName("imguni");
 var i=0;
+
 
 function Densidade() {
     for(i =0; i <divs.length; i++) {
         divs[i].style.width =  "50%";
-        divs[i].style.height = "auto";
+        divs[i].style.height = "60%";
 
     }    
 }
@@ -56,6 +57,7 @@ function Densidade3(){
     for(i = 0; i < divs.length; i++) {
         divs[i].style.width = "20%";
         divs[i].style.height = "auto";
+        
     }
 }
 

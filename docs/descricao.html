@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="icones/fritzsquarewhite.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>  
     <script src="Js/animacao.js"></script>
     <script src="Js/Visual/action.js"></script>
 </head>
@@ -27,110 +28,23 @@
     <div class="blankdesc"></div>
     <div class="articledesc">
                 <div class="divpardesc" id="divpardesc">
-                    <h1 class="titulodesc">Restaurante a</h1>
-                    <p class="pardesc" id="pardesc">Restaurante de comida vegana, feita com amor e vendida a preços justos</p>
+                    <h1 class="titulodesc">{{ titulodesc }}</h1>
+                    <p class="pardesc" id="pardesc">{{ pardesc }}</p>
                 </div>
-                <h4 class="precodesc">Faixa de Preço: $</h4>    
+                <h4 class="precodesc">Faixa de Preço: {{ precodesc }}</h4>    
     </div>
     <div class="produtos">
                 <div class="descproduto">
-                        <div class="addcarrinho">
-                                <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-                            </div>     
+                    <div class="addcarrinho">
+                        <div class="addcarrinhodireita"></div>
+                        <div class="addcarrinhoesquerda"></div>
+                    </div>
                     <img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
                     <div class="descprodutodiv">
                         <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
                 </div></div>
-                <div class="descproduto">
-                    <div class="addcarrinho">
-                            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-                        </div>     
-                <img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-                <div class="descprodutodiv">
-                    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-            </div></div>
-            <div class="descproduto">
-                <div class="addcarrinho">
-                        <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-                    </div>     
-            <img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-            <div class="descprodutodiv">
-                <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-        </div></div>
-        <div class="descproduto">
-            <div class="addcarrinho">
-                    <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-                </div>     
-        <img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-        <div class="descprodutodiv">
-            <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-    </div></div>
-    <div class="descproduto">
-        <div class="addcarrinho">
-                <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-            </div>     
-    <img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-    <div class="descprodutodiv">
-        <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotit   'rulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-<div class="descproduto">
-    <div class="addcarrinho">
-            <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
-        </div>     
-<img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-<div class="descprodutodiv">
-    <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-</div></div>
-        </div>
     </div>
 <footer></footer>
+<script src="Js/Content/contentDescricao.js"></script>
 </body>
 </html>

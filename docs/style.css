@@ -246,6 +246,7 @@ li, a{
     cursor: inherit;
     padding: 15px;
     background: none;
+    
 }
 
 .btnrest2 {  
@@ -285,6 +286,7 @@ input[type=text], input[type=password]{
 .select-customizado, .densidade {
     background: none;
     border: 2px;
+    width: 150px;
     border-style: solid;
     border-radius: 5px;
     padding: 5px;
@@ -398,11 +400,10 @@ h2{
 
 .imguni{
     border-radius: 5px;
-    width: 100%;
+    width: 96%;
     height: auto;
     display: block;
-    margin: 0;
-    float: left;
+    margin: auto;
 
 }
 
@@ -431,7 +432,7 @@ h2{
 
 }
 
-.icone{
+.icone{ 
     border-radius: 2px;
     float: left;
     width: 60px;
@@ -443,7 +444,7 @@ h2{
 .iconerest{
     width: 50px;
     height: 50px;
-    margin: 4px;
+    margin: 5px;
     padding: 0;
 }
 
@@ -453,7 +454,7 @@ h2{
 
 }
 
-.saibamais, .btnentrar, .btncadastrar {
+.saibamais, .btnentrar, .btncadastrar, .addcarrinho {
     color: white;
     font-family: 'Google Sans', sans-serif;
     font-size: 15px;
@@ -469,7 +470,7 @@ h2{
 
 }
 
-.saibamais:hover, .btnrest:hover{
+.saibamais:hover, .btnrest:hover, .addcarrinho:hover{
     background: black;
     box-shadow: 0px 2px 5px grey;
     color: white;
@@ -524,14 +525,15 @@ h2{
 .articledesc{
     text-align: center;
     padding: 20px;
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin: 0;
+    margin: auto;
 
 }
 
 .precodesc{
-    color: rgb(36, 36, 36);
+    font-family: 'Google Sans', sans-serif;
+    color: rgb(46, 46, 46);
 }
 
 .imgdesc{
@@ -541,8 +543,8 @@ h2{
 }
 
 .produtos{
-    margin: 0;
-    height: 100%;
+    margin: auto;
+    height: 90%;
     text-align: center;
 
 }
@@ -576,8 +578,8 @@ h2{
 }
 
 .descprodutoimg{
-    height: 170px;
-    width: 190px;
+    height: 160px;
+    width: 200px;
 }
 
 .descprodutoseta{
@@ -620,7 +622,7 @@ h2{
 }
 
 .descprodutotitulo{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     padding: 2px;
     margin: auto;
@@ -629,32 +631,27 @@ h2{
 
 .addcarrinho{
     opacity: 0.0;
-    width: auto;
-    height: auto;
-    padding: 6px;
-    background: rgb(255, 123, 0);
-    border-radius: 30px;
-    box-shadow: 0 10 50px black;
-    margin-top: 0;
     position: absolute;
     float: right;
-    animation: 1s linear;
-    box-shadow: 0 2px 5px grey;     
+    animation: 1s linear; 
 
 }
 
+.addcarrinhodireita{
+    float: right;
 
-.addcarrinhoicone{
-    width: 25px;
-    height: 25px;
-
-}  
-
-.addcarrinho:hover{
-    background: rgb(255, 156, 63);
-    box-shadow: 0 4px 10px grey;
-    transform: scale(1.1, 1.1);
-    
 }
 
+.addcarrinhoesquerda{
+    float: left;
 
+}
+
+.addcarrinhodireita, .navdescdireita{
+    background: inherit;
+    mix-blend-mode: difference;
+    padding: inherit;
+    margin: inherit;
+    height: inherit;
+
+}
