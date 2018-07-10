@@ -116,39 +116,8 @@ function FechaEntrarRestante(){
 
 }
 
-var prevScroll = window.pageYOffset;
-window.onScroll = function(){
-    var currentScroll = window.pageYOffset;
-    if(prevScroll > currentScroll) {
-        this.document.getElementsByClassName("navdesc").style.top = "0";
-
-    } 
-    else {
-        document.getElementsByClassName("navdesc").style.top = "-80px";
-
-    }
-    prevScroll = currentScroll;
-
+function ExibirQtd() {
+    var slide1 = document.getElementsByClassName()
+    var slide2 = document.getElementsByClassName
 }
-
-function ExibirProdutoDesc(){
-    var seta = document.getElementsByClassName('descprodutoseta');
-    var transform = document.getElementsByClassName('descprodutodesc');
-        $(seta).click(function(){
-            $('descprodutodesctransform').toggleClass('descprodutodesctransform-active');
-        });
-
-}
-
-function SetaAbrir(){
-     document.getElementsByClassName('descprodutoseta');
-
-}
-
-function OcultarProdutoDesc(){
-    var seta = document.getElementsByClassName('descprodutoseta');
-    var transform = document.getElementsByClassName('descprodutodesc');
-           
-}
-
 

@@ -1,3 +1,10 @@
+var titulopagina = new Vue({
+    el: 'title',
+    data: {
+            titulopagina: 'Bolinhos Lindinhos'
+    }
+});
+
 var titulodesc = new Vue({
     el: '.titulodesc',
     data: {
@@ -16,5 +23,18 @@ var precodesc = new Vue({
     el: '.precodesc',
     data: {
         precodesc: '$'
+    }
+});
+
+var descprodutoimg = new Vue({
+    el: '.descprodutoimg',
+    data: {
+        descprodutoimg: ''
+    }
+});
+var descprodutotitulo = new Vue({
+    el: '.descprodutotitulo',
+    data: {
+        descprodutotitulo: 'Produto a'
     }
 });

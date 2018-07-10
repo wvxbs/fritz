@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fritz</title>
+    <title>Fritz | {{ titulopagina }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
@@ -34,14 +34,20 @@
     </div>
     <div class="produtos">
                 <div class="descproduto">
-                    <div class="addcarrinho">
-                        <div class="addcarrinhodireita"></div>
-                        <div class="addcarrinhoesquerda"></div>
+                <img class="descprodutoimg" src="{{ descprodutoimg }}">
+                    <div class="pardescproduto">
+                        <h1 class="descprodutotitulo">{{ descprodutotitulo }}</h1>
                     </div>
-                    <img class="descprodutoimg" src="imagens/fabio-alves-386882-unsplash.jpg">
-                    <div class="descprodutodiv">
-                        <h1 class="descprodutotitulo">Produto a<a onclick="ExibirProdutoDesc()"><img class="descprodutoseta" src="icones/if_442-Arrow_down_2124471.png"></a></h1>
-                </div></div>
+                            <div class="addcarrinho">
+                                <img class="addcarrinhoicone" onclick="ExibirQtd" src="icones/if_Basket_2205960.png">
+                                <div class="addcarrinhodireita">
+                                    <img class="addcarrinhoqtd" src="icones/if_Plus_2202243.png" value="plus">
+                                </div>
+                                <div class="addcarrinhoesquerda">
+                                    <img class="addcarrinhoqtd"src="" value="minus">
+                                </div>
+                        </div>
+                </div>
     </div>
 <footer></footer>
 <script src="Js/Content/contentDescricao.js"></script>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab|Roboto|Google+Sans|Lato');
+@import url('https://fonts.Openapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab|Roboto|Open+Sans|Lato');
 
 body{
     position: absolute;
@@ -33,7 +33,7 @@ footer{
     background: rgb(255, 123, 0);
     z-index: 1;
     position: absolute;
-    box-shadow:  0 2px 5px rgb(44, 44, 44);
+    box-shadow:  0 2px 5px rgb(78, 78, 78);
 
 }
 
@@ -45,7 +45,7 @@ footer{
     height: auto;
     z-index: -1;
     float: right;
-    box-shadow:  0 3px 60px rgb(44, 44, 44);
+    box-shadow:  0 3px 60px rgb(78, 78, 78);
 
 }
 
@@ -70,7 +70,7 @@ nav{
     top: 0;
     padding-top: 0;
     text-align: none;
-    box-shadow: 0 0 6px rgb(44, 44, 44);
+    box-shadow: 0 0 6px rgb(78, 78, 78);
 
 }
 
@@ -186,7 +186,7 @@ li, a{
     border-radius: 10px;
     background: rgb(255, 255, 255);
     color: black;
-    box-shadow: 0 0 50px rgb(44, 44, 44));
+    box-shadow: 0 0 50px rgb(78, 78, 78));
     display: none;
     z-index: 1000;
 
@@ -195,7 +195,7 @@ li, a{
 
 .btnentrar:hover, .btncadastrar:hover{
     background: black;
-    box-shadow: 0 0 15px rgb(44, 44, 44);
+    box-shadow: 0 0 15px rgb(78, 78, 78);
     color: white;
 
 }
@@ -250,7 +250,7 @@ li, a{
 }
 
 .btnrest2 {  
-    color: rgb(44, 44, 44);
+    color: rgb(78, 78, 78);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;    
     text-decoration: none;
@@ -291,7 +291,7 @@ input[type=text], input[type=password]{
     border-radius: 5px;
     padding: 5px;
     border-color: black;
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -382,7 +382,7 @@ h2{
     width: 20%;
     height: auto;  
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgb(44, 44, 44);
+    box-shadow: 0px 2px 5px rgb(78, 78, 78);
     
 }   
 
@@ -454,9 +454,9 @@ h2{
 
 }
 
-.saibamais, .btnentrar, .btncadastrar, .addcarrinho {
+.saibamais, .btnentrar, .btncadastrar{
     color: white;
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     width: 120px;
     text-decoration: none;
@@ -466,16 +466,10 @@ h2{
     border: 3px;
     padding: 8px;
     background: rgb(255, 123, 0);
-    box-shadow: 0 2px 2px rgb(44, 44, 44);
+    box-shadow: 0 2px 2px rgb(78, 78, 78);
 
 }
 
-.saibamais:hover, .btnrest:hover, .addcarrinho:hover{
-    background: black;
-    box-shadow: 0px 2px 5px rgb(44, 44, 44);
-    color: white;
-
-}
 
 .btnrest2:hover{
     background: black;
@@ -490,14 +484,14 @@ h2{
 }
 
 .titulodesc {
-    color: rgb(36, 36, 36);
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
+    color: rgb(36, 36, 36);
 
 }
 
 .pardesc{
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(49, 49, 49);
 
 }
@@ -510,7 +504,7 @@ h2{
     margin: 0;
     padding: 0;
     position: fixed;
-    box-shadow: 0 0 10px rgb(44, 44, 44);
+    box-shadow: 0 0 10px rgb(78, 78, 78);
 
 }
 
@@ -520,6 +514,7 @@ h2{
 }
 .navdescdireita .btnrest:hover{
     box-shadow: 0px 0 15px rgb(53, 53, 53); 
+
 }
 
 .articledesc{
@@ -532,7 +527,7 @@ h2{
 }
 
 .precodesc{
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(46, 46, 46);
 }
 
@@ -550,21 +545,21 @@ h2{
 }
 
 .descproduto{
-    text-align: center;
+    text-align: left;
     z-index: -1;
     background: white;
-    padding: 0px;
+    padding: 5px;
     margin: 2%;
     display: inline-block;
     height: auto;
-    width: auto;
-    box-shadow: 0 2px 5px rgb(44, 44, 44);
+    width: 55%;
+    box-shadow: 0 2px 5px rgb(78, 78, 78);
 
 }
 
 .descproduto:hover{
     z-index: -1;
-    box-shadow: 0 5px 10px rgb(44, 44, 44);    
+    box-shadow: 0 4px 6px rgb(78, 78, 78);    
 
 }
 
@@ -572,49 +567,28 @@ h2{
     z-index: 1000 !important;
 }
 
-.descproduto:hover .addcarrinho{
+.descproduto:hover{
     opacity: 1;
 
 }
 
 .descprodutoimg{
+    float: left;
     height: 160px;
     width: 200px;
     
-}
-
-.descprodutoseta{
-    transform: rotate(180deg);
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    margin: 0;
-
 }
 
 .descprodutoseta:hover{
     transform: scale(1.2, 1.2) rotate(180deg);  
 }
 
-.descprodutodesctransform{
-    transition: all 1s ease;
-
-}
-
-.descprodutodesctransform-active{
-    width: ;
-
-}
-
-.descprodutodiv{
-    margin-top: auto;
-    background: white;
-    font-family: 'Dosis', sans-serif;
-    padding:;
-    width: 150px;
-    height: auto;
-    background: white;
-    color: black;
+.descprodutotitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding: 2px;
+    margin-left: 10px;
+    margin: auto;
 
 }
 
@@ -622,37 +596,44 @@ h2{
 
 }
 
-.descprodutotitulo{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    padding: 2px;
-    margin: auto;
+
+.addcarrinho{
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    float: right;
+    animation: 1s linear; 
+    border-radius: 100px;
+    background: rgb(255, 123, 0);
+    margin-top: 89px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
 
 }
 
-.addcarrinho{
-    opacity: 0.0;
-    position: absolute;
-    float: right;
-    animation: 1s linear; 
+.addcarrinho:hover, .saibamais:hover, .btnrest:hover    {
+    background: rgb(255, 143, 37);
+    box-shadow: 0 3px 7px rgb(54, 54, 54);
+
+}
+
+.addcarrinhoicone, .addcarrinhoqtd {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    margin-top: 9px;
+    margin-right: 2px;
 
 }
 
 .addcarrinhodireita{
     float: right;
+    display: none;
 
 }
 
 .addcarrinhoesquerda{
     float: left;
+    display: none;
 
 }
 
-.addcarrinhodireita{
-    background: inherit;
-    mix-blend-mode: difference;
-    padding: inherit;
-    margin: inherit;
-    height: inherit;
-
-}
