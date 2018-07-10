@@ -1,26 +1,16 @@
-const titulo = popmotion.styler(document.querySelector('.titulo'));
+const { easing, tween, styler } = window.popmotion;
 
-object.onload = function Demo(){
-    const sphere = new THREE.Mesh(geometry, material);
-    const sphereY = value(5, (v) => sphere.position.y = v);
+const divStyler = styler(document.querySelector('.descproduto'));
 
-    const gravity = physics({
-    from: sphereY.get(),
-    acceleration: - 9.8,
-    restSpeed: false
-    }).pipe(
-    (v) => (v <= 1) && gravity.setVelocity(10),
-    (v) => Math.max(1, v)
-    ).start(sphereY);const sphere = new THREE.Mesh(geometry, material);
-    const sphereY = value(5, (v) => sphere.position.y = v);
+tween({
+  from: 0,
+  to: { x: 300, rotate: 180 },
+  duration: 1000,
+  ease: easing.backOut,
+  flip: Infinity,
+  // elapsed: 500,
+  // loop: 5,
+  // yoyo: 5
+}).start(divStyler.set);
 
-    const gravity = physics({
-    from: sphereY.get(),
-    acceleration: - 9.8,
-    restSpeed: false
-    }).pipe(
-    (v) => (v <= 1) && gravity.setVelocity(10),
-    (v) => Math.max(1, v)
-    ).start(sphereY);
 
-}
