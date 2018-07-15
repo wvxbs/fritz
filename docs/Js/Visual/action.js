@@ -1,13 +1,4 @@
-var largura = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > largura) {
-      console.log(el);
-    }
-  }
-);
 
 function Clica(){
     var endereco = document.getElementById('idendereco');
@@ -34,6 +25,7 @@ function OcultarBusca(){
 }
 
 var imguni = document.getElementsByClassName("imguni");
+var divs = document.getElementsByClassName('unitario');
 var i=0;
 
 
@@ -104,20 +96,10 @@ function CancelaEntrar() {
 
 }
 
-function ExibeEntrarRestante() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-
-}
-
-function FechaEntrarRestante(){
-    var popup = document.getElementsByClassName("entrarrest");
-    popup.classList.toggle("hide");
-
-}
-
 function ExibirQtd() {
-    var slide1 = document.getElementsByClassName()
-    var slide2 = document.getElementsByClassName
+    document.getElementsByClassName('addcarrinnho').style.width = "auto";
+    document.getElementsByClassName('addcarrinhodireita').style.opacity = "1.0";
+    document.getElementsByClassName('addcarrinhoesquerda').style.opacity = "1.0";
+
 }
 

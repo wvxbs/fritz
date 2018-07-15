@@ -1,6 +1,50 @@
-@import url('https://fonts.Openapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab|Roboto|Open+Sans|Lato');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lobster|Dosis|Bree+Serif|Roboto+Slab|Roboto|Open+Sans|Lato');
 
-body{
+:root{
+    --BackgroundColor: rgb(250, 250, 250);
+    --AccentColor: rgb(255, 123, 0);
+    --DefaultShadow: rgb(78, 78, 78);
+
+}
+
+@keyframes preloader{
+    15%{opacity: 1;}
+    50%{transform: translateY(-20px); opacity: 0.3;};
+
+}
+
+#overlay {
+    z-index: 1001 !important;
+    background: var(--AccentColor);
+    overflow: hidden;
+
+}
+
+.preloader .dot:nth-child(2) {
+    animation-delay: .15s;
+  }
+  
+  .preloader .dot:nth-child(3) {
+    animation-delay: .3s;
+  }
+  
+  .preloader .dot:nth-child(4) {
+    animation-delay: .45s;
+  }
+  
+  .preloader .dot:nth-child(5) {
+    animation-delay: .6s;
+  }
+
+.preloader .dot {
+    display: inline-block;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    animation: preloader 1s infinite;
+}
+
+body, .body{
     position: absolute;
     font-family: 'Fjalla One', sans-serif;
     margin: auto;
@@ -9,9 +53,10 @@ body{
     border: 0;
     padding: 0;
     color: black;
-    background: #F5F5F5;
+    background: var(--BackgroundColor);
     user-select: none;
     -moz-user-select: none; 
+
 }
 
 footer{
@@ -30,10 +75,10 @@ footer{
     margin: 4%;
     width: 30%;
     height: 500px;
-    background: rgb(255, 123, 0);
+    background: var(--AccentColor);
     z-index: 1;
     position: absolute;
-    box-shadow:  0 2px 5px rgb(78, 78, 78);
+    box-shadow:  0 2px 5px var(--DefaultShadow);
 
 }
 
@@ -45,7 +90,7 @@ footer{
     height: auto;
     z-index: -1;
     float: right;
-    box-shadow:  0 3px 60px rgb(78, 78, 78);
+    box-shadow:  0 3px 60px var(--DefaultShadow);
 
 }
 
@@ -70,7 +115,7 @@ nav{
     top: 0;
     padding-top: 0;
     text-align: none;
-    box-shadow: 0 0 6px rgb(78, 78, 78);
+    box-shadow: 0 0 6px var(--DefaultShadow);
 
 }
 
@@ -102,7 +147,7 @@ ul{
 }
 
 .navesquerda{
-    background: rgb(255, 123, 0);
+    background: var(--AccentColor);
     margin: 0;
     padding: 0;
     float: left;
@@ -123,6 +168,10 @@ ul{
     z-index: 3;
     
     }  
+
+.carrinho {
+    display: none;
+}
 
 .navmob{
     margin: 0;
@@ -186,7 +235,7 @@ li, a{
     border-radius: 10px;
     background: rgb(255, 255, 255);
     color: black;
-    box-shadow: 0 0 50px rgb(78, 78, 78));
+    box-shadow: 0 0 50px var(--DefaultShadow));
     display: none;
     z-index: 1000;
 
@@ -195,7 +244,7 @@ li, a{
 
 .btnentrar:hover, .btncadastrar:hover{
     background: black;
-    box-shadow: 0 0 15px rgb(78, 78, 78);
+    box-shadow: 0 0 15px var(--DefaultShadow);
     color: white;
 
 }
@@ -222,7 +271,6 @@ li, a{
     color:black;
     border-color: black;
     background: rgba(255, 0, 0, 0);
-    transition-duration: 40ms;
     cursor: inherit;
     margin:10px;
 
@@ -232,7 +280,6 @@ li, a{
     background: black;
     box-shadow: 0px 0px 10px black;
     color: white;
-    transition-duration: 40ms;
 
 }
 
@@ -242,7 +289,6 @@ li, a{
     color: inherit;
     text-decoration: none;
     border-style: none;
-    transition-duration: 40ms;
     cursor: inherit;
     padding: 15px;
     background: none;
@@ -250,13 +296,12 @@ li, a{
 }
 
 .btnrest2 {  
-    color: rgb(78, 78, 78);
+    color: var(--DefaultShadow);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;    
     text-decoration: none;
     border-style: none;
     color: inherit;
-    transition-duration: 40ms;
     cursor: inherit;
     padding: 15px;
     background: none;
@@ -274,7 +319,6 @@ input[type=text], input[type=password]{
     border-radius: 5px;
     border-color: rgb(0, 0, 0);
     background: rgb(247, 247, 247);
-    transition-duration: 40ms;
 
 }
 
@@ -382,7 +426,7 @@ h2{
     width: 20%;
     height: auto;  
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgb(78, 78, 78);
+    box-shadow: 0px 2px 5px var(--DefaultShadow);
     
 }   
 
@@ -462,11 +506,10 @@ h2{
     text-decoration: none;
     border-style: none;
     border-radius: 4px;
-    transition-duration: 40ms;
     border: 3px;
     padding: 8px;
-    background: rgb(255, 123, 0);
-    box-shadow: 0 2px 2px rgb(78, 78, 78);
+    background: var(--AccentColor);
+    box-shadow: 0 2px 2px var(--DefaultShadow);
 
 }
 
@@ -497,14 +540,14 @@ h2{
 }
 
 .navdesc{
-    background: rgb(255, 123, 0);
+    background: var(--AccentColor);
     width: 100%;
     height: 70px;
     border: 0;
     margin: 0;
     padding: 0;
     position: fixed;
-    box-shadow: 0 0 10px rgb(78, 78, 78);
+    box-shadow: 0 0 5px var(--DefaultShadow);
 
 }
 
@@ -553,13 +596,14 @@ h2{
     display: inline-block;
     height: auto;
     width: 55%;
-    box-shadow: 0 2px 5px rgb(78, 78, 78);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px var(--DefaultShadow);
 
 }
 
 .descproduto:hover{
     z-index: -1;
-    box-shadow: 0 4px 6px rgb(78, 78, 78);    
+    box-shadow: 0 3px 5px var(--DefaultShadow);    
 
 }
 
@@ -576,6 +620,7 @@ h2{
     float: left;
     height: 160px;
     width: 200px;
+    border-radius: 5px;
     
 }
 
@@ -585,9 +630,8 @@ h2{
 
 .descprodutotitulo{
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    padding: 2px;
-    margin-left: 10px;
+    font-size: 15px;
+    padding: 3px;
     margin: auto;
 
 }
@@ -604,19 +648,19 @@ h2{
     float: right;
     animation: 1s linear; 
     border-radius: 100px;
-    background: rgb(255, 123, 0);
+    background: var(--AccentColor);
     margin-top: 89px;
-    box-shadow: 0 2px 5px rgb(54, 54, 54);
+    box-shadow: 0 3px 3px rgb(90, 90, 90);
 
 }
 
-.addcarrinho:hover, .saibamais:hover, .btnrest:hover    {
+.addcarrinho:hover, .saibamais:hover, .btnrest:hover {
     background: rgb(255, 143, 37);
     box-shadow: 0 3px 7px rgb(54, 54, 54);
 
 }
 
-.addcarrinhoicone, .addcarrinhoqtd {
+.addcarrinhoicone, .addcarrinhoqtd{
     width: 25px;
     height: 25px;
     padding: 2px;
@@ -627,13 +671,17 @@ h2{
 
 .addcarrinhodireita{
     float: right;
-    display: none;
+    opacity: 0.0;
+    z-index: 999 !important;
 
 }
 
 .addcarrinhoesquerda{
     float: left;
-    display: none;
+    opacity: 0.0;
+    z-index: 999 !important;
 
 }
+
+
 

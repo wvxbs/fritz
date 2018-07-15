@@ -13,13 +13,14 @@
     <script src="Js/animacao.js"></script>
 </head>
 <body>
+    <div class="body" id="body">
     <div class="navdesc">
         <a href="descricao.html"><img class="iconerest" src="icones/fritzsquare.png"></a>
         <div class="navdescdireita">
             <ul>
                 <li onclick="ExibirBusca()"><a><input class="btnrest2" type="button" value="Busca"></a></li>
                 <li><a><input class="btnrest2" type="button" value="Carrinho"></a></li>
-                <li><a href="descricao.html"><input class="btnrest2" type="button" value="Voltar"></a></li>
+                <li><a href="{{ voltar }}"><input class="btnrest2" type="button" value="Voltar"></a></li>
             </ul>
         </div>
 </div>
@@ -49,5 +50,6 @@
             </form>
 </div>
 <footer></footer>
+</div>
 </body>
 </html>

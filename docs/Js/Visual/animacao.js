@@ -1,16 +1,14 @@
-const { easing, tween, styler } = window.popmotion;
+var overlay = document.getElementById('overlay');
+var body = document.getElementById('body');
 
-const divStyler = styler(document.querySelector('.descproduto'));
 
-tween({
-  from: 0,
-  to: { x: 300, rotate: 180 },
-  duration: 1000,
-  ease: easing.backOut,
-  flip: Infinity,
-  // elapsed: 500,
-  // loop: 5,
-  // yoyo: 5
-}).start(divStyler.set);
+
+window.addEventListener('load', function(){
+    overlay.style.height = window.innerHeight;
+    overlay.style.width = window.innerWidth;
+    overlay.style.display = "none";
+});
+
+
 
 

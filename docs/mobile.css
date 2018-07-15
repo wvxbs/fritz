@@ -1,3 +1,10 @@
+:root{
+    --BackgroundColor: rgb(250, 250, 250);
+    --AccentColor: rgb(255, 123, 0);
+    --DefaultShadow: rgb(78, 78, 78);
+
+}
+
 @media only screen and (max-width: 1200px) {
     body{
         margin-right: auto;
@@ -11,7 +18,7 @@
 
     .body{
         display: block;
-        background: rgb(255, 123, 0);
+        background: var(--AccentColor);
 
     }
 
@@ -29,7 +36,7 @@
         margin-bottom: auto; 
         width: 50%;
         height: auto;
-        background: rgb(255, 123, 0);
+        background: var(--AccentColor);
         box-shadow: none;
         color: black;
 
@@ -63,7 +70,7 @@
     nav, .nav, .navdesc {
         background-image: none;
         background-size: 0;
-        background: rgb(255, 123, 0); 
+        background: var(--AccentColor); 
         height: 70px;
         width: 100%;
         position: fixed;
@@ -267,7 +274,7 @@
     .unitario{
         border: 0;
         border-bottom: 2px;
-        border-color: rgb(255, 123, 0);
+        border-color: var(--AccentColor);
         border-style: solid;
         box-shadow: none;
         font-size: 4vw;

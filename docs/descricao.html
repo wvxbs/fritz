@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fritz | {{ titulopagina }}</title>
+    <title value=>Fritz | {{ titulopagina }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
@@ -11,9 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/popmotion"></script>
     <script src="https://unpkg.com/vue"></script>  
-    <script src="Js/Visual/action.js"></script>
 </head>
 <body>
+    <div class="body" id="body">
     <div class="navdesc">
             <a href="restaurantes.html"><img class="iconerest" src="icones/fritzsquare.png"></a>
             <div class="navdescdireita">
@@ -34,23 +34,24 @@
     </div>
     <div class="produtos">
                 <div class="descproduto">
-                <img class="descprodutoimg" src="{{ descprodutoimg }}">
+                <img class="descprodutoimg" :id="descprodutoimg" src="{{ descprodutoimg }}">
                     <div class="pardescproduto">
                         <h1 class="descprodutotitulo">{{ descprodutotitulo }}</h1>
                     </div>
-                            <div class="addcarrinho">
-                                <img class="addcarrinhoicone" onclick="ExibirQtd" src="icones/if_Basket_2205960.png">
+                            <div class="addcarrinho" onclick="ExibirQtd()">
+                                <img class="addcarrinhoicone" src="icones/if_Basket_2205960.png">
                                 <div class="addcarrinhodireita">
-                                    <img class="addcarrinhoqtd" src="icones/if_Plus_2202243.png" value="plus">
+                                    <img class="addcarrinhoqtd" src="icones/if_basics-15_296819.png" value="plus">
                                 </div>
                                 <div class="addcarrinhoesquerda">
-                                    <img class="addcarrinhoqtd"src="" value="minus">
+                                    <img class="addcarrinhoqtd" src="icones/if_basics-16_296818.png" value="minus">
                                 </div>
                         </div>
                 </div>
     </div>
 <footer></footer>
+</div>
 <script src="Js/Content/contentDescricao.js"></script>
-<script src="Js/animacao.js"></script>
+<script src="Js/Visual/action.js"></script>
 </body>
 </html>
