@@ -64,8 +64,7 @@ footer{
     width: 100%;
 }
 
-.principal{
-    overflow: none;
+.principal{ 
 
 }
 
@@ -223,7 +222,6 @@ li, a{
 }
 
 .entrarrest{
-    display: block;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -235,7 +233,7 @@ li, a{
     border-radius: 10px;
     background: rgb(255, 255, 255);
     color: black;
-    box-shadow: 0 0 50px var(--DefaultShadow));
+    box-shadow: 0 0 50px var(--DefaultShadow);
     display: none;
     z-index: 1000;
 
