@@ -18,7 +18,7 @@
 
     .body{
         display: block;
-        background: var(--AccentColor);
+        background: var(--BackgroundColor);
 
     }
 
@@ -296,9 +296,18 @@
 
     }
 
+    .produtos{
+        width: 98%;
+
+    }
+
+    .descproduto{
+        width: 310px;
+    }
+
     .descprodutoimg{
-        width: 150px;
-        height: 120px;
+        width: 50%;
+        height: 100%;
 
     }
 
@@ -307,8 +316,13 @@
     }
 
     .descprodutodesc{
-        width: 100%;
+        display: none;
         
+    }
+
+    .addcarrinho{
+        margin-top: 78px;
+        margin-right: 3px
     }
 
     .descprodutotitulo{

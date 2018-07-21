@@ -1,5 +1,4 @@
-
-
+document.getElementById('body').style.height = window.innerHeight;
 function Clica(){
     var endereco = document.getElementById('idendereco');
     $(endereco).fadeIn("medium");

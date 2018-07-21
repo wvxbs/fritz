@@ -616,11 +616,20 @@ h2{
 
 }
 
+.pardescproduto{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    grid-gap: 2px 2px;
+    width: 100%;
+}
+
 .descprodutoimg{
-    float: left;
-    height: 160px;
-    width: 200px;
+    grid-row-start: 1;
+    grid-row-end: 3;
     border-radius: 5px;
+    width: 200px;
+    height: 150px;
     
 }
 
@@ -629,19 +638,27 @@ h2{
 }
 
 .descprodutotitulo{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 15px;
     padding: 3px;
-    margin: auto;
+    margin: auto;   
 
 }
 
 .descprodutodesc{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(56, 56, 56);
+    font-size: 13px;
+    text-align: justify;
 
 }
 
 
 .addcarrinho{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
     text-align: center;
     width: 46px;
     height: 46px;
@@ -649,7 +666,6 @@ h2{
     animation: 1s linear; 
     border-radius: 100px;
     background: var(--AccentColor);
-    margin-top: 89px;
     box-shadow: 0 3px 3px rgb(90, 90, 90);
 
 }

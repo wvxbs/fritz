@@ -35,6 +35,6 @@ var descprodutoimg = new Vue({
 var descprodutotitulo = new Vue({
     el: '.descprodutotitulo',
     data: {
-        descprodutotitulo: 'Produto a'
+        descprodutotitulo: 'Hamburguer de Lentilha com molho barbecue vegano'
     }
 });
