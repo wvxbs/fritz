@@ -173,13 +173,22 @@ ul{
 }
 
 .navmob{
-    margin: 0;
-    padding: 0;
     display: none;
-    background: none;
-    float: left;
 
 }
+
+.btnmob{
+    display: block;
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.btnmobicone{
+    width: 20px;
+    height: 20  px;
+}
+
 
 li, a{
     margin-top: 25px;

@@ -77,17 +77,13 @@
         border: none;
         padding: 0;
         margin-bottom: 10px;
-        box-shadow: 0 0 6px rgb(80, 80, 80)
+        box-shadow: 0 0 5px rgb(37, 37, 37);
 
     } 
 
     .navdescdireita{
         float: right;
 
-    }
-
-    #navmobdireita{
-        float: right;
     }
 
     .blank{
@@ -102,7 +98,16 @@
     }
 
     .navmob{
+        height: 48px;
+        background: white;
+        text-align: center;
+        width: 100%;
         display: block;
+        border-top: 0.5px black solid;
+        display: block;
+        position: fixed;
+        z-index: 1001 !important;
+        bottom: 0;
 
     }
 
@@ -266,16 +271,10 @@
 
     } 
 
-    ul {
-        display: none;
-
-    }
     .unitario{
         border: 0;
         border-bottom: 2px;
         border-color: var(--AccentColor);
-        border-style: solid;
-        box-shadow: none;
         font-size: 4vw;
         padding: 2%;
         width: 100%;
