@@ -218,9 +218,13 @@
         box-shadow: 0 0 5px rgb(37, 37, 37);
 
     } 
+
+    .navtitulomob{
+        display: block;
+    }
+
     .icone{
-        width: 30px;
-        height: 30px;
+        display: none
 
     }
 
