@@ -120,6 +120,10 @@ nav{
 
 .navtitulomob{
     display: none;
+    font-size: 35px;
+    margin: auto;
+    float: none;
+    
 }
 
 ul{
@@ -496,6 +500,10 @@ h2{
     height: 60px;
     margin: 10px;
 
+}
+
+.iconerestaurantediv{
+    position: absolute;
 }
 
 .iconerest{
