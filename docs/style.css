@@ -187,10 +187,11 @@ display: none;
 
 .btnmob{
     width: 50px;
+    height: 10px
     display: inline-block;
     color: black;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
